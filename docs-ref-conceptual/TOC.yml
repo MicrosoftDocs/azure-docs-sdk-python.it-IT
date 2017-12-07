@@ -6,7 +6,7 @@
     - name: Strumenti
       href: python-azure-tools.md
     - name: Introduzione ai moduli Python
-      href: python-sdk-azure-get-started.md
+      href: python-sdk-azure-get-started.yml
     - name: Autenticazione
       href: python-sdk-azure-authenticate.md
     - name: Guide introduttive
