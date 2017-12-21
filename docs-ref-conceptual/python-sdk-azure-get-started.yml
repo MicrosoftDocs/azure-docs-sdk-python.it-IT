@@ -10,11 +10,11 @@ metadata:
   nextTutorialTitle: Informazioni di riferimento su Python SDK
   displayType: two-column
   interactive: azurecli
-  ms.openlocfilehash: 38b8fdd9f83dfd096c8efcac8d73fe254dd35326
-  ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+  ms.openlocfilehash: 103dd9fa8307f8f71eab6d219e8a2dad28ba94f0
+  ms.sourcegitcommit: 932b476b0f0c4c6613a4bdc1b0b96e6ce4ba8fcb
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 12/05/2017
+  ms.lasthandoff: 12/14/2017
 items:
 - durationInMinutes: 
   content: "Questa guida illustra l'utilizzo di alcune librerie di Azure per Python.  \n"
@@ -26,7 +26,7 @@ items:
   content: "> [!IMPORTANT]\n> Questo approccio è consigliato come esperienza di avvio rapido per gli sviluppatori. Per finalità di produzione, usare [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) o il proprio sistema di credenziali.\n> Eventuali modifiche apportate alla configurazione dell'interfaccia della riga di comando influiranno sull'esecuzione dell'SDK.\n\nL'SDK consente di creare un client tramite la sottoscrizione attiva dell'interfaccia della riga di comando.\n\nPer definire le credenziali attive, usare [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).\nL'ID sottoscrizione predefinito corrisponde a quello disponibile oppure è possibile definirlo usando [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).\n\n```python\nfrom azure.common.client_factory import get_client_from_cli_profile\nfrom azure.mgmt.compute import ComputeManagementClient\n\nclient = get_client_from_cli_profile(ComputeManagementClient)\n```\n"
 - title: Creare un ambiente virtuale
   durationInMinutes: 5
-  content: "> [!IMPORTANT]\n> La creazione di un ambiente virtuale è facoltativa, ma consigliata.\n\nCreare un ambiente virtuale in Bash (Linux o [Bash per Windows](https://msdn.microsoft.com/commandline/wsl/about)):\n```bash\npip install virtualenv\nvirtualenv mytestenv\ncd mytestenv\nsource ./bin/activate\n```\n\nCreare un ambiente virtuale in Powershell:\n```powershell\npip install virtualenv\nvirtualenv mytestenv\ncd mytestenv\n.\\Scripts\\activate\n```\n"
+  content: "> [!IMPORTANT]\n> La creazione di un ambiente virtuale è facoltativa, ma consigliata.\n\nCreare un ambiente virtuale in Bash (Linux o [Bash per Windows](https://msdn.microsoft.com/commandline/wsl/about)):\n```bash\npip install virtualenv\nvirtualenv mytestenv\ncd mytestenv\nsource ./bin/activate\n```\n\nCreare un ambiente virtuale in PowerShell:\n```powershell\npip install virtualenv\nvirtualenv mytestenv\ncd mytestenv\n.\\Scripts\\activate\n```\n"
 - title: Creare una macchina virtuale Linux
   durationInMinutes: 5
   content: >
