@@ -3,11 +3,13 @@
   items:
     - name: Panoramica
       href: python-sdk-azure-overview.md
+    - name: Installazione
+      href: /azure/python-how-to-install
     - name: Strumenti
       href: python-azure-tools.md
     - name: Introduzione ai moduli Python
       href: python-sdk-azure-get-started.yml
-    - name: Autenticazione
+    - name: Authentication
       href: python-sdk-azure-authenticate.md
     - name: Guide introduttive
       items:
