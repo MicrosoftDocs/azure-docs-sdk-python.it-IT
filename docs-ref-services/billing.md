@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 64224e86aec5456d4c3b1f79878b4e225c22145e
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: f24bbba17f3777fc5e07cb0741eb5c5c6e18109f
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="azure-billing-libraries-for-python"></a><span data-ttu-id="0670d-104">Librerie di fatturazione di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="0670d-104">Azure Billing libraries for python</span></span>
+# <a name="azure-billing-libraries-for-python"></a><span data-ttu-id="413b3-104">Librerie di fatturazione di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="413b3-104">Azure Billing libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="0670d-105">Installare le librerie</span><span class="sxs-lookup"><span data-stu-id="0670d-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="413b3-105">Installare le librerie</span><span class="sxs-lookup"><span data-stu-id="413b3-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="0670d-106">gestione</span><span class="sxs-lookup"><span data-stu-id="0670d-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="413b3-106">Gestione</span><span class="sxs-lookup"><span data-stu-id="413b3-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-billing
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="0670d-107">Esplorare le API di gestione</span><span class="sxs-lookup"><span data-stu-id="0670d-107">Explore the Management APIs</span></span>](/python/api/overview/azure/billing/managementlibrary)
+> [<span data-ttu-id="413b3-107">Esplorare le API di gestione</span><span class="sxs-lookup"><span data-stu-id="413b3-107">Explore the Management APIs</span></span>](/python/api/overview/azure/billing/management)
