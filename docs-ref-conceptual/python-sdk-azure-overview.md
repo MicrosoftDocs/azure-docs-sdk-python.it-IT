@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: e0c7b4acd1aa57d141f4407c0ba483a1529d2b35
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-libraries-for-python"></a>Librerie di Azure per Python
 
@@ -45,7 +45,7 @@ server = sql_client.servers.create_or_update(
 )
 ```
 
-Vedere le [istruzioni di installazione](/azure/python-how-to-install) per ottenere un elenco completo delle librerie e informazioni sull'importazione delle librerie nei progetti, quindi leggere l'[articolo introduttivo](python-sdk-azure-get-started.yml) per configurare l'autenticazione ed eseguire il codice di esempio nella propria sottoscrizione di Azure.
+Vedere le [istruzioni di installazione](python-sdk-azure-install.md) per ottenere un elenco completo delle librerie e informazioni sull'importazione delle librerie nei progetti, quindi leggere l'[articolo introduttivo](python-sdk-azure-get-started.yml) per configurare l'autenticazione ed eseguire il codice di esempio nella propria sottoscrizione di Azure.
 
 ## <a name="connect-to-azure-services"></a>Connettersi ai servizi di Azure
 

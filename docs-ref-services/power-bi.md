@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: fd370193f319d6e00a4727736e2126f40dd06fb3
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: d58752f58a39fad9910cc7bd1f8170516c39d863
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-powerbi-libraries-for-python"></a>Librerie di Azure PowerBI per Python
 
 ## <a name="install-the-libraries"></a>Installare le librerie
 
 
-### <a name="management"></a>gestione
+### <a name="management"></a>Gestione
 
 ```bash
 pip install azure-mgmt-powerblembedded
 ```
 > [!div class="nextstepaction"]
-> [Esplorare le API di gestione](/python/api/overview/azure/powerbi/managementlibrary)
+> [Esplorare le API di gestione](/python/api/overview/azure/powerbi/management)
