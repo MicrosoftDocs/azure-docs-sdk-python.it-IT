@@ -2,30 +2,83 @@
 title: "Librerie dell'Utilità di pianificazione di Azure per Python"
 description: "Informazioni di riferimento sulle librerie dell'Utilità di pianificazione di Azure per Python"
 keywords: "Azure, Python, SDK, API, Utilità di pianificazione"
-author: sptramer
-ms.author: sttramer
-manager: douge
-ms.date: 07/10/2017
+author: lisawong19
+ms.author: liwong
+manager: mbaldwin
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 55aeabd7efebeb6663a651277489637ab527c72c
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 3d2691ae1ba84c41f25de2b099aacefaa92152ed
+ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="azure-scheduler-libraries-for-python"></a>Librerie dell'Utilità di pianificazione di Azure per Python
 
 ## <a name="install-the-libraries"></a>Installare le librerie
 
-
-### <a name="management"></a>gestione
+## <a name="management"></a>Gestione
 
 ```bash
 pip install azure-mgmt-scheduler
 ```
+## <a name="example"></a>Esempio
+
+### <a name="create-the-management-client"></a>Creare il client di gestione
+
+Il codice seguente crea un'istanza del client di gestione.
+
+Sarà necessario specificare il proprio ``subscription_id``, recuperabile dall'[elenco delle sottoscrizioni](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
+
+Vedere [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) (Autenticazione di gestione risorse) per informazioni dettagliate sulla gestione dell'autenticazione di Azure Active Directory con Python SDK e sulla creazione di un'istanza di ``Credentials``.
+
+```python
+from azure.mgmt.scheduler import SchedulerManagementClient
+from azure.common.credentials import UserPassCredentials
+
+# Replace this with your subscription id
+subscription_id = '33333333-3333-3333-3333-333333333333'
+
+# See above for details on creating different types of AAD credentials
+credentials = UserPassCredentials(
+    'user@domain.com',  # Your user
+    'my_password',      # Your password
+)
+
+scheduler_client = SchedulerManagementClient(
+    credentials,
+    subscription_id
+)
+```
+
+### <a name="create-a-job-collection"></a>Creare una raccolta di processi
+
+Il codice seguente crea una raccolta di processi in un gruppo di risorse esistente.
+Per creare o gestire i gruppi di risorse,vedere [Gestione risorse](/python/api/overview/azure/azure.mgmt.resource).
+
+```python
+from azure.mgmt.scheduler.models import JobCollectionDefinition, JobCollectionProperties, Sku
+
+group_name = 'myresourcegroup'
+job_collection_name = "myjobcollection"
+scheduler_client.job_collections.create_or_update(
+    group_name,
+    job_collection_name,
+    JobCollectionDefinition(
+        location = "West US",
+        properties = JobCollectionProperties(
+            sku = Sku(
+                name="Free"
+            )
+        )
+    )
+)
+# scheduler_client is a JobCollectionDefinition instance
+```
+
 > [!div class="nextstepaction"]
-> [Esplorare le API di gestione](/python/api/overview/azure/scheduler/managementlibrary)
+> [Esplorare le API di gestione](/python/api/overview/azure/scheduler/management)
