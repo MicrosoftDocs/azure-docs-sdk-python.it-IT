@@ -1,25 +1,25 @@
 ---
 title: Librerie di Azure Cosmos DB per Python
-description: Documentazione di riferimento per le librerie client Python per Cosmos DB
+description: Documentazione di riferimento per le librerie client Python per Azure Cosmos DB
 keywords: Azure, Python, SDK, API, SQL, database, PostGres,Cosmos DB, NoSQL
 author: lisawong19
 ms.author: liwong
 manager: douge
-ms.date: 08/11/2017
+ms.date: 03/20/2018
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: d56dd69f4fc4513034046f9f721608ad94ff5cfe
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 391b556ece7d818406fa501763814eb7f0d50d22
+ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="azure-cosmosdb-libraries-for-python"></a>Librerie di Azure Cosmos DB per Python
+# <a name="azure-cosmos-db-libraries-for-python"></a>Librerie di Azure Cosmos DB per Python
 
 ## <a name="overview"></a>Panoramica
 
-Usare Cosmos DB nelle applicazioni Python per l'archiviazione e l'esecuzione di query nei documenti JSON in un archivio dati NoSQL.
+Usare Azure Cosmos DB nelle applicazioni Python per l'archiviazione e l'esecuzione di query nei documenti JSON in un archivio dati NoSQL.
 
 Altre informazioni su [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).
 
@@ -35,13 +35,13 @@ pip install azure-mgmt-cosmosdb
 
 ### <a name="example"></a>Esempio
 
-Trovare documenti corrispondenti in Cosmos DB usando un'interfaccia di query analoga a SQL:
+Trovare documenti corrispondenti in Azure Cosmos DB usando un'interfaccia di query analoga a SQL:
 
 ```python
 import pydocumentdb
 import pydocumentdb.document_client as document_client
 
-# Initialize the Python DocumentDB client
+# Initialize the Python Azure Cosmos DB client
 client = document_client.DocumentClient(config['ENDPOINT'], {'masterKey': config['MASTERKEY']})
 # Create a database
 db = client.CreateDatabase({ 'id': config['DOCUMENTDB_DATABASE'] })
@@ -83,6 +83,6 @@ print(results)
 
 ## <a name="samples"></a>Esempi
 
-[Develop a Python app using Azure Cosmos DB's DocumentDB API](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/) (Sviluppare un'app Python usando l'API DocumentDB di Azure Cosmos DB)
+[Develop a Python app using Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/) (Sviluppare un'app Python usando Azure Cosmos DB)
 
 
