@@ -3,18 +3,18 @@ title: Managed Disks
 description: Creare, ridimensionare e aggiornare un disco gestito.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 1dceb1b2fe700904b530f1834f0338f7d5e61999
-ms.sourcegitcommit: 3e477d608bbb41f0c561c88e4c665013e3008c26
+ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
+ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="managed-disks"></a>Managed Disks
 
@@ -22,7 +22,7 @@ Azure Managed Disks e 1000 VM in un set di scalabilità sono ora [disponibili a 
 
 
 
-Dal punto di vista degli sviluppatori, l'esperienza di Managed Disks nell'interfaccia della riga di comando di Azure è analoga all'esperienza dell'interfaccia della riga di comando in altri strumenti multipiattaforma. È possibile usare [Azure Python](https://azure.microsoft.com/develop/python/) SDK e il [pacchetto azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) per amministrare Managed Disks. È possibile creare un client di calcolo usando questa [esercitazione](http://azure-sdk-for-python.readthedocs.io/en/latest/resourcemanagementcomputenetwork.html).
+Dal punto di vista degli sviluppatori, l'esperienza di Managed Disks nell'interfaccia della riga di comando di Azure è analoga all'esperienza dell'interfaccia della riga di comando in altri strumenti multipiattaforma. È possibile usare [Azure Python](https://azure.microsoft.com/develop/python/) SDK e il [pacchetto azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) per amministrare Managed Disks. È possibile creare un client di calcolo usando questa [esercitazione](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
 
 
 ## <a name="standalone-managed-disks"></a>Dischi gestiti autonomi
