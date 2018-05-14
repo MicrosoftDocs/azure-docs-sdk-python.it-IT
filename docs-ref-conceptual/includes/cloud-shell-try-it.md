@@ -1,9 +1,9 @@
-## <a name="launch-azure-cloud-shell"></a><span data-ttu-id="3b1ea-101">Avviare Azure Cloud Shell</span><span class="sxs-lookup"><span data-stu-id="3b1ea-101">Launch Azure Cloud Shell</span></span>
+## <a name="launch-azure-cloud-shell"></a>Avviare Azure Cloud Shell
 
-<span data-ttu-id="3b1ea-102">Azure Cloud Shell è una shell bash gratuita che è possibile eseguire direttamente nel portale di Azure.</span><span class="sxs-lookup"><span data-stu-id="3b1ea-102">The Azure Cloud Shell is a free bash shell that you can run directly within the Azure Portal.</span></span> <span data-ttu-id="3b1ea-103">Include l'interfaccia della riga di comando di Azure preinstallata e configurata per l'uso con l'account.</span><span class="sxs-lookup"><span data-stu-id="3b1ea-103">It has the Azure CLI preinstalled and configured to use with your account.</span></span> <span data-ttu-id="3b1ea-104">Fare clic sul pulsante **Cloud Shell** nel menu nel riquadro in alto a destra nel [portale di Azure](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="3b1ea-104">Click the **Cloud Shell** button on the menu in the upper-right of the [Azure portal](https://portal.azure.com).</span></span>
+Azure Cloud Shell è una shell bash gratuita che è possibile eseguire direttamente nel portale di Azure. Include l'interfaccia della riga di comando di Azure preinstallata e configurata per l'uso con l'account. Fare clic sul pulsante **Cloud Shell** nel menu nel riquadro in alto a destra nel [portale di Azure](https://portal.azure.com).
 
-<span data-ttu-id="3b1ea-105">[![Cloud Shell](../media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)</span><span class="sxs-lookup"><span data-stu-id="3b1ea-105">[![Cloud Shell](../media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)</span></span>
+[![Cloud Shell](../media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)
 
-<span data-ttu-id="3b1ea-106">Il pulsante avvia una shell interattiva che è possibile usare per eseguire tutti i passaggi in questo argomento:</span><span class="sxs-lookup"><span data-stu-id="3b1ea-106">The button launches an interactive shell that you can use to run all of the steps in this topic:</span></span>
+Il pulsante avvia una shell interattiva che è possibile usare per eseguire tutti i passaggi in questo argomento:
 
-<span data-ttu-id="3b1ea-107">[![Screenshot che mostra la finestra di Cloud Shell nel portale](../media/cloud-shell-try-it/cloud-shell-safari.png)](https://portal.azure.com)</span><span class="sxs-lookup"><span data-stu-id="3b1ea-107">[![Screenshot showing the Cloud Shell window in the portal](../media/cloud-shell-try-it/cloud-shell-safari.png)](https://portal.azure.com)</span></span>
+[![Screenshot che mostra la finestra di Cloud Shell nel portale](../media/cloud-shell-try-it/cloud-shell-safari.png)](https://portal.azure.com)
