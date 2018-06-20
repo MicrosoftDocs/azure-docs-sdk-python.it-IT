@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: a0ec8fb3d2ef5eb4c5c58a3370b6efa221e33029
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909014"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-sql-database"></a>Esempi di librerie di gestione di Azure per Python per il database SQL
 

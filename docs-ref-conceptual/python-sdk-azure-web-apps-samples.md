@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 64ca5c673366f641ffd66fccb88750c32a4fad38
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909024"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-web-apps"></a>Esempi di librerie di gestione di Azure per Python per app Web
 

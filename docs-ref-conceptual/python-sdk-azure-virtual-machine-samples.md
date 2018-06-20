@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 0222632b0d65395e00f64f07806b03ddab4f8222
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909264"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-virtual-machines"></a>Esempi di librerie di gestione di Azure per Python per le macchine virtuali
 

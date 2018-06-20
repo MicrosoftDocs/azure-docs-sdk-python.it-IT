@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909364"
 ---
 # <a name="azure-other-libraries-for-python"></a>Altre librerie di Azure per Python
 

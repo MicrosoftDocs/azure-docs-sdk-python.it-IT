@@ -3,7 +3,7 @@ title: Creare un flusso di lavoro di app per la logica
 description: Creare un flusso di lavoro di app per la logica
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909064"
 ---
 # <a name="create-a-logic-app-workflow"></a>Creare un flusso di lavoro di app per la logica
 

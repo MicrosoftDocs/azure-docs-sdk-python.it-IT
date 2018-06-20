@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479034"
 ---
 # <a name="azure-data-lake-store-libraries-for-python"></a>Librerie di Azure Data Lake Store per Python
 
