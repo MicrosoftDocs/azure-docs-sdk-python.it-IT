@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478944"
 ---
 # <a name="azure-traffic-manager-libraries-for-python"></a><span data-ttu-id="b4d90-104">Librerie di Gestione traffico di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="b4d90-104">Azure Traffic Manager libraries for python</span></span>
 

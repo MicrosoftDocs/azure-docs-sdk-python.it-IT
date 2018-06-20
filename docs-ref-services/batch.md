@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478984"
 ---
 # <a name="azure-batch-libraries-for-python"></a><span data-ttu-id="ef3f1-104">Librerie di Azure Batch per Python</span><span class="sxs-lookup"><span data-stu-id="ef3f1-104">Azure Batch libraries for python</span></span>
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: d521a7350216461eb2fa68152c4975f55152f831
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/06/2017
+ms.locfileid: "26327989"
 ---
 # <a name="azure-resources-libraries-for-python"></a><span data-ttu-id="0a4dc-104">Librerie delle risorse di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="0a4dc-104">Azure Resources libraries for python</span></span>
 

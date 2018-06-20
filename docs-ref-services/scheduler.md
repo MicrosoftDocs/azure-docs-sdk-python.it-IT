@@ -1,7 +1,7 @@
 ---
-title: "Librerie dell'Utilità di pianificazione di Azure per Python"
-description: "Informazioni di riferimento sulle librerie dell'Utilità di pianificazione di Azure per Python"
-keywords: "Azure, Python, SDK, API, Utilità di pianificazione"
+title: Librerie dell'Utilità di pianificazione di Azure per Python
+description: Informazioni di riferimento sulle librerie dell'Utilità di pianificazione di Azure per Python
+keywords: Azure, Python, SDK, API, Utilità di pianificazione
 author: lisawong19
 ms.author: liwong
 manager: mbaldwin
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551614"
 ---
 # <a name="azure-scheduler-libraries-for-python"></a><span data-ttu-id="48edb-104">Librerie dell'Utilità di pianificazione di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="48edb-104">Azure Scheduler libraries for python</span></span>
 

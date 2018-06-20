@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478994"
 ---
 # <a name="azure-consumption-libraries-for-python"></a><span data-ttu-id="2a4ee-104">Librerie di consumo di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="2a4ee-104">Azure Consumption libraries for python</span></span>
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478924"
 ---
 # <a name="azure-active-directory-libraries-for-python"></a><span data-ttu-id="a28a3-104">Librerie di Azure Active Directory per Python</span><span class="sxs-lookup"><span data-stu-id="a28a3-104">Azure Active Directory libraries for Python</span></span>
 

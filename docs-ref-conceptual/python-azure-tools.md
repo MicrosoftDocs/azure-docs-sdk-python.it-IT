@@ -14,6 +14,7 @@ ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26184595"
 ---
 # <a name="azure-tools-for-python-developers"></a><span data-ttu-id="e3e59-103">Strumenti di Azure per sviluppatori Python</span><span class="sxs-lookup"><span data-stu-id="e3e59-103">Azure tools for Python developers</span></span>
 

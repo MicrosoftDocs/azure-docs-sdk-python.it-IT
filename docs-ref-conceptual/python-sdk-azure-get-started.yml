@@ -14,18 +14,82 @@ metadata:
   ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 01/18/2018
+  ms.locfileid: "27907931"
 items:
 - durationInMinutes: 1
   content: "<span data-ttu-id=\"99670-105\">Questa guida illustra l'utilizzo di alcune librerie di Azure per Python.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-105\">This guide demonstrates the usage of several Azure libraries for Python.</span></span>  \n"
 - title: <span data-ttu-id="99670-106">prerequisiti</span><span class="sxs-lookup"><span data-stu-id="99670-106">Prerequisites</span></span>
   durationInMinutes: 5
-  content: "- <span data-ttu-id=\"99670-107\">Un account Azure.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-107\">An Azure account.</span></span> <span data-ttu-id=\"99670-108\">Se non è disponibile, [ottenere una versione di valutazione gratuita](https://azure.microsoft.com/free/).</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-108\">If you don't have one, [get a free trial](https://azure.microsoft.com/free/).</span></span>\n- [<span data-ttu-id=\"99670-109\">Python</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-109\">Python</span></span>](https://www.python.org/downloads/)\n- <span data-ttu-id=\"99670-110\">[Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) o [interfaccia della riga di comando di Azure 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-110\">[Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) or [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).</span></span>\n"
+  content: >
+    - <span data-ttu-id="99670-107">Un account Azure.</span><span class="sxs-lookup"><span data-stu-id="99670-107">An Azure account.</span></span> <span data-ttu-id="99670-108">Se non è disponibile, [ottenere una versione di valutazione gratuita](https://azure.microsoft.com/free/).</span><span class="sxs-lookup"><span data-stu-id="99670-108">If you don't have one, [get a free trial](https://azure.microsoft.com/free/).</span></span>
+
+    - [<span data-ttu-id="99670-109">Python</span><span class="sxs-lookup"><span data-stu-id="99670-109">Python</span></span>](https://www.python.org/downloads/)
+
+    - <span data-ttu-id="99670-110">[Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) o [interfaccia della riga di comando di Azure 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).</span><span class="sxs-lookup"><span data-stu-id="99670-110">[Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) or [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).</span></span>
 - title: <span data-ttu-id="99670-111">Configurare l'autenticazione</span><span class="sxs-lookup"><span data-stu-id="99670-111">Set up authentication</span></span>
   durationInMinutes: 5
-  content: "> [!IMPORTANT]\n> <span data-ttu-id=\"99670-112\">Questo approccio è consigliato come esperienza di avvio rapido per gli sviluppatori.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-112\">This should be used as quick start developer experience.</span></span> <span data-ttu-id=\"99670-113\">Per finalità di produzione, usare [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) o il proprio sistema di credenziali.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-113\">For production purposes, use [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) or your own credentials system.</span></span>\n> <span data-ttu-id=\"99670-114\">Eventuali modifiche apportate alla configurazione dell'interfaccia della riga di comando influiranno sull'esecuzione dell'SDK.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-114\">Any change to your CLI configuration will impact the SDK execution.</span></span>\n\n<span data-ttu-id=\"99670-115\">L'SDK consente di creare un client tramite la sottoscrizione attiva dell'interfaccia della riga di comando.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-115\">The SDK is able to create a client using your CLI active subscription.</span></span>\n\n<span data-ttu-id=\"99670-116\">Per definire le credenziali attive, usare [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-116\">To define active credentials, use [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span></span>\n<span data-ttu-id=\"99670-117\">L'ID sottoscrizione predefinito corrisponde a quello disponibile oppure è possibile definirlo usando [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-117\">Default subscription ID is either the only one you have, or you can define it using [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span></span>\n\n```python\nfrom azure.common.client_factory import get_client_from_cli_profile\nfrom azure.mgmt.compute import ComputeManagementClient\n\nclient = get_client_from_cli_profile(ComputeManagementClient)\n```\n"
+  content: >
+    > [!IMPORTANT]
+
+    > <span data-ttu-id="99670-112">Questo approccio è consigliato come esperienza di avvio rapido per gli sviluppatori.</span><span class="sxs-lookup"><span data-stu-id="99670-112">This should be used as quick start developer experience.</span></span> <span data-ttu-id="99670-113">Per finalità di produzione, usare [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) o il proprio sistema di credenziali.</span><span class="sxs-lookup"><span data-stu-id="99670-113">For production purposes, use [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) or your own credentials system.</span></span>
+
+    > <span data-ttu-id="99670-114">Eventuali modifiche apportate alla configurazione dell'interfaccia della riga di comando influiranno sull'esecuzione dell'SDK.</span><span class="sxs-lookup"><span data-stu-id="99670-114">Any change to your CLI configuration will impact the SDK execution.</span></span>
+
+
+    <span data-ttu-id="99670-115">L'SDK consente di creare un client tramite la sottoscrizione attiva dell'interfaccia della riga di comando.</span><span class="sxs-lookup"><span data-stu-id="99670-115">The SDK is able to create a client using your CLI active subscription.</span></span>
+
+
+    <span data-ttu-id="99670-116">Per definire le credenziali attive, usare [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="99670-116">To define active credentials, use [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span></span>
+
+    <span data-ttu-id="99670-117">L'ID sottoscrizione predefinito corrisponde a quello disponibile oppure è possibile definirlo usando [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="99670-117">Default subscription ID is either the only one you have, or you can define it using [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span></span>
+
+
+    ```python
+
+    from azure.common.client_factory import get_client_from_cli_profile
+
+    from azure.mgmt.compute import ComputeManagementClient
+
+
+    client = get_client_from_cli_profile(ComputeManagementClient)
+
+    ```
 - title: <span data-ttu-id="99670-118">Creare un ambiente virtuale</span><span class="sxs-lookup"><span data-stu-id="99670-118">Create a virtual environment</span></span>
   durationInMinutes: 5
-  content: "> [!IMPORTANT]\n> <span data-ttu-id=\"99670-119\">La creazione di un ambiente virtuale è facoltativa, ma consigliata.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-119\">Create a virtual environment is optional, but we strongly suggest you to do it.</span></span>\n\n<span data-ttu-id=\"99670-120\">Creare un ambiente virtuale in Bash (Linux o [Bash per Windows](https://msdn.microsoft.com/commandline/wsl/about)):</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-120\">Create a virtual environment in Bash (Linux or [Bash for Windows](https://msdn.microsoft.com/commandline/wsl/about)):</span></span>\n```bash\npip install virtualenv\nvirtualenv mytestenv\ncd mytestenv\nsource ./bin/activate\n```\n\n<span data-ttu-id=\"99670-121\">Creare un ambiente virtuale in PowerShell:</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-121\">Create a virtual environment in PowerShell:</span></span>\n```powershell\npip install virtualenv\nvirtualenv mytestenv\ncd mytestenv\n.\\Scripts\\activate\n```\n"
+  content: >
+    > [!IMPORTANT]
+
+    > <span data-ttu-id="99670-119">La creazione di un ambiente virtuale è facoltativa, ma consigliata.</span><span class="sxs-lookup"><span data-stu-id="99670-119">Create a virtual environment is optional, but we strongly suggest you to do it.</span></span>
+
+
+    <span data-ttu-id="99670-120">Creare un ambiente virtuale in Bash (Linux o [Bash per Windows](https://msdn.microsoft.com/commandline/wsl/about)):</span><span class="sxs-lookup"><span data-stu-id="99670-120">Create a virtual environment in Bash (Linux or [Bash for Windows](https://msdn.microsoft.com/commandline/wsl/about)):</span></span>
+
+    ```bash
+
+    pip install virtualenv
+
+    virtualenv mytestenv
+
+    cd mytestenv
+
+    source ./bin/activate
+
+    ```
+
+
+    <span data-ttu-id="99670-121">Creare un ambiente virtuale in PowerShell:</span><span class="sxs-lookup"><span data-stu-id="99670-121">Create a virtual environment in PowerShell:</span></span>
+
+    ```powershell
+
+    pip install virtualenv
+
+    virtualenv mytestenv
+
+    cd mytestenv
+
+    .\Scripts\activate
+
+    ```
 - title: <span data-ttu-id="99670-122">Creare una macchina virtuale Linux</span><span class="sxs-lookup"><span data-stu-id="99670-122">Create a Linux virtual machine</span></span>
   durationInMinutes: 5
   content: >
@@ -212,4 +276,11 @@ items:
   durationInMinutes: 5
   content: "<span data-ttu-id=\"99670-149\">Autenticazione:</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-149\">Authenticate:</span></span>\n```azcli\naz login\n```\n<span data-ttu-id=\"99670-150\">Creare un gruppo di risorse:</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-150\">Create a resource group:</span></span>\n```azurecli-interactive\naz group create -l eastus -n sampleStorageResourceGroup\n```\n\n<span data-ttu-id=\"99670-151\">Creare un account di archiviazione:</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-151\">Create a storage account:</span></span>\n```azurecli-interactive\naz storage account create -n samplestorageaccountname -g sampleStorageResourceGroup -l eastus --sku Standard_RAGRS\n```\n\n<span data-ttu-id=\"99670-152\">Questo codice crea un [account di archiviazione di Azure](https://docs.microsoft.com/azure/storage/storage-introduction) e quindi usa le librerie di archiviazione di Azure per Python per creare un nuovo file HTML nel cloud.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-152\">This code creates an [Azure storage account](https://docs.microsoft.com/azure/storage/storage-introduction) and then uses the Azure Storage libraries for Python to create a new html file in the cloud.</span></span> \n```python\nfrom azure.storage import CloudStorageAccount\nfrom azure.storage.blob import PublicAccess\nfrom azure.storage.blob.models import ContentSettings\nfrom azure.common.client_factory import get_client_from_cli_profile\nfrom azure.mgmt.storage import StorageManagementClient\n\nRESOURCE_GROUP = 'sampleStorageResourceGroup'\nSTORAGE_ACCOUNT_NAME = 'samplestorageaccountname'\nCONTAINER_NAME = 'samplecontainername'\n\n# log in\nstorage_client = get_client_from_cli_profile(StorageManagementClient)\n\n# create a public storage container to hold the file\nstorage_keys = storage_client.storage_accounts.list_keys(RESOURCE_GROUP, STORAGE_ACCOUNT_NAME)\nstorage_keys = {v.key_name: v.value for v in storage_keys.keys}\n\nstorage_client = CloudStorageAccount(STORAGE_ACCOUNT_NAME, storage_keys['key1'])\nblob_service = storage_client.create_block_blob_service()\n\nblob_service.create_container(CONTAINER_NAME, public_access=PublicAccess.Container)\n\nblob_service.create_blob_from_bytes(\n    CONTAINER_NAME,\n    'helloworld.html',\n    b'<center><h1>Hello World!</h1></center>',\n    content_settings=ContentSettings('text/html')\n)\n\nprint(blob_service.make_blob_url(CONTAINER_NAME, 'helloworld.html'))\n```\n<span data-ttu-id=\"99670-153\">Per verificare che il contenuto sia stato caricato correttamente, passare all'URL stampato.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-153\">To verify content successfully uploaded, navigate to the URL printed.</span></span> \n\n<span data-ttu-id=\"99670-154\">Pulire l'account di archiviazione usando l'interfaccia della riga di comando:</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-154\">Clean up the storage account using the CLI:</span></span>\n```azurecli-interactive\naz group delete --name sampleStorageResourceGroup\n```\n"
 - title: <span data-ttu-id="99670-155">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="99670-155">Next Steps</span></span>
-  content: "<span data-ttu-id=\"99670-156\">L'introduzione alle librerie di Azure per Python è completata.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-156\">You've completed \"Getting started with Azure libraries for python\".</span></span>\n\n- <span data-ttu-id=\"99670-157\">Per altre informazioni su come usare le librerie di gestione di Azure per Python per gestire le risorse e l'automazione delle attività, vedere il codice di esempio per [macchine virtuali](python-sdk-azure-web-apps-samples.md), [app Web](python-sdk-azure-web-apps-samples.md) e [database SQL](python-sdk-azure-sql-database-samples.md).</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-157\">To learn more about how to use the Azure management libraries for Python to manage resources and automate tasks, see our sample code for [virtual machines](python-sdk-azure-web-apps-samples.md), [web apps](python-sdk-azure-web-apps-samples.md) and [SQL database](python-sdk-azure-sql-database-samples.md).</span></span>\n\n- <span data-ttu-id=\"99670-158\">Le [informazioni di riferimento](/python/api/overview/azure/?view=azure-python) sono disponibili per tutti i pacchetti.</span><span class=\"sxs-lookup\"><span data-stu-id=\"99670-158\">A [reference](/python/api/overview/azure/?view=azure-python) is available for all packages.</span></span>\0"
+  content: >-
+    <span data-ttu-id="99670-156">L'introduzione alle librerie di Azure per Python è completata.</span><span class="sxs-lookup"><span data-stu-id="99670-156">You've completed "Getting started with Azure libraries for python".</span></span>
+
+
+    - <span data-ttu-id="99670-157">Per altre informazioni su come usare le librerie di gestione di Azure per Python per gestire le risorse e l'automazione delle attività, vedere il codice di esempio per [macchine virtuali](python-sdk-azure-web-apps-samples.md), [app Web](python-sdk-azure-web-apps-samples.md) e [database SQL](python-sdk-azure-sql-database-samples.md).</span><span class="sxs-lookup"><span data-stu-id="99670-157">To learn more about how to use the Azure management libraries for Python to manage resources and automate tasks, see our sample code for [virtual machines](python-sdk-azure-web-apps-samples.md), [web apps](python-sdk-azure-web-apps-samples.md) and [SQL database](python-sdk-azure-sql-database-samples.md).</span></span>
+
+
+    - <span data-ttu-id="99670-158">Le [informazioni di riferimento](/python/api/overview/azure/?view=azure-python) sono disponibili per tutti i pacchetti.</span><span class="sxs-lookup"><span data-stu-id="99670-158">A [reference](/python/api/overview/azure/?view=azure-python) is available for all packages.</span></span>

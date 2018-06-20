@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551574"
 ---
 # <a name="azure-devtest-labs-libraries-for-python"></a><span data-ttu-id="256bc-104">Librerie di Azure DevTest Labs per Python</span><span class="sxs-lookup"><span data-stu-id="256bc-104">Azure DevTest Labs libraries for python</span></span>
 
