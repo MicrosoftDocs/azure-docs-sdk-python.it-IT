@@ -11,27 +11,27 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 77008eb76c3a925d9c7e63fe9360ea5b25da49de
-ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
+ms.openlocfilehash: 27b826c1f11aca0d8c49c4e8eab4277b857eea37
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29551604"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277233"
 ---
-# <a name="azure-commerce-libraries-for-python"></a><span data-ttu-id="160c4-104">Librerie di e-commerce di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="160c4-104">Azure Commerce libraries for python</span></span>
+# <a name="azure-commerce-libraries-for-python"></a><span data-ttu-id="c5da8-104">Librerie di e-commerce di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="c5da8-104">Azure Commerce libraries for python</span></span>
 
-## <a name="management-apipythonapioverviewazurecommercemanagement"></a>[<span data-ttu-id="160c4-105">API di gestione</span><span class="sxs-lookup"><span data-stu-id="160c4-105">Management API</span></span>](/python/api/overview/azure/commerce/management)
+## <a name="management-apipythonapioverviewazurecommercemanagement"></a>[<span data-ttu-id="c5da8-105">API di gestione</span><span class="sxs-lookup"><span data-stu-id="c5da8-105">Management API</span></span>](/python/api/overview/azure/commerce/management)
 
 ```bash
 pip install azure-mgmt-commerce
 ```
-## <a name="create-the-commerce-client"></a><span data-ttu-id="160c4-106">Creare il client di e-commerce</span><span class="sxs-lookup"><span data-stu-id="160c4-106">Create the commerce client</span></span>
+## <a name="create-the-commerce-client"></a><span data-ttu-id="c5da8-106">Creare il client di e-commerce</span><span class="sxs-lookup"><span data-stu-id="c5da8-106">Create the commerce client</span></span>
 
-<span data-ttu-id="160c4-107">Il codice seguente crea un'istanza del client di gestione.</span><span class="sxs-lookup"><span data-stu-id="160c4-107">The following code creates an instance of the management client.</span></span>
+<span data-ttu-id="c5da8-107">Il codice seguente crea un'istanza del client di gestione.</span><span class="sxs-lookup"><span data-stu-id="c5da8-107">The following code creates an instance of the management client.</span></span>
 
-<span data-ttu-id="160c4-108">Sarà necessario specificare il proprio ``subscription_id``, recuperabile dall'[elenco delle sottoscrizioni](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="160c4-108">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
+<span data-ttu-id="c5da8-108">Sarà necessario specificare il proprio ``subscription_id``, recuperabile dall'[elenco delle sottoscrizioni](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="c5da8-108">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
 
-<span data-ttu-id="160c4-109">Vedere [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) (Autenticazione di gestione risorse) per informazioni dettagliate sulla gestione dell'autenticazione di Azure Active Directory con Python SDK e sulla creazione di un'istanza di ``Credentials``.</span><span class="sxs-lookup"><span data-stu-id="160c4-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
+<span data-ttu-id="c5da8-109">Vedere [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) (Autenticazione di gestione risorse) per informazioni dettagliate sulla gestione dell'autenticazione di Azure Active Directory con Python SDK e sulla creazione di un'istanza di ``Credentials``.</span><span class="sxs-lookup"><span data-stu-id="c5da8-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
 
 ```python
 from azure.mgmt.commerce import UsageManagementClient
@@ -52,7 +52,7 @@ commerce_client = UsageManagementClient(
 )
 ``` 
 
-## <a name="get-rate-card"></a><span data-ttu-id="160c4-110">Ottenere il tariffario pubblicitario</span><span class="sxs-lookup"><span data-stu-id="160c4-110">Get rate card</span></span>
+## <a name="get-rate-card"></a><span data-ttu-id="c5da8-110">Ottenere il tariffario pubblicitario</span><span class="sxs-lookup"><span data-stu-id="c5da8-110">Get rate card</span></span>
 
 ```python
 # OfferDurableID: https://azure.microsoft.com/en-us/support/legal/offer-details/
@@ -61,7 +61,7 @@ rate = commerce_client.rate_card.get(
 )
 ```
 
-## <a name="get-usage"></a><span data-ttu-id="160c4-111">Ottenere l'utilizzo</span><span class="sxs-lookup"><span data-stu-id="160c4-111">Get Usage</span></span>
+## <a name="get-usage"></a><span data-ttu-id="c5da8-111">Ottenere l'utilizzo</span><span class="sxs-lookup"><span data-stu-id="c5da8-111">Get Usage</span></span>
 
 ```python
 from datetime import date, timedelta
@@ -75,4 +75,4 @@ usage_iterator = commerce_client.usage_aggregates.list(
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="160c4-112">Esplorare le API di gestione</span><span class="sxs-lookup"><span data-stu-id="160c4-112">Explore the Management APIs</span></span>](/python/api/overview/azure/commerce/management)
+> [<span data-ttu-id="c5da8-112">Esplorare le API di gestione</span><span class="sxs-lookup"><span data-stu-id="c5da8-112">Explore the Management APIs</span></span>](/python/api/overview/azure/commerce/management)
