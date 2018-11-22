@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: de0f1f60ab39cd0c17bfe7d292a901e4608d9a11
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 53640c7bbad3a15a8e5bfe0d535209ca232d42f9
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909364"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52272967"
 ---
 # <a name="azure-other-libraries-for-python"></a>Altre librerie di Azure per Python
 
@@ -28,7 +28,7 @@ pip install azure-common
 pip install azure
 ```
 
-### <a name="management"></a>gestione
+### <a name="management"></a>Gestione
 
 ```bash
 pip install azure-mgmt

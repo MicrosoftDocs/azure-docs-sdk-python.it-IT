@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: container-instances
-ms.openlocfilehash: 09f39375e0e92b6d09a965c3972d772a1437d0d4
-ms.sourcegitcommit: 8c70bfd95309c3a77a4c0f73373c1785d59cdd10
+ms.openlocfilehash: 95571e0da6ef82ef045d8c9ba0a5beb0abe9b63a
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34761325"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52273017"
 ---
 # <a name="azure-container-instances-libraries-for-python"></a>Librerie di Istanze di contenitore di Azure per Python
 
@@ -56,8 +56,7 @@ Per autenticare i client SDK, come i client di Resource Manager e Istanze di con
 
 Dopo aver creato il file delle credenziali e aver popolato la variabile di ambiente `AZURE_AUTH_LOCATION`, usare il metodo `get_client_from_auth_file` del modulo [client_factory][client_factory] per inizializzare gli oggetti [ResourceManagementClient][ResourceManagementClient] e [ContainerInstanceManagementClient][ContainerInstanceManagementClient].
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[authenticate](~/aci-docs-sample-python/src/aci_docs_sample.py#L45-L58 "Authenticate ACI and Resource Manager clients")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[authenticate](~/aci-docs-sample-python/src/aci_docs_sample.py#L45-L58 "Authenticate ACI and Resource Manager clients")]
 
 Per altri dettagli sui metodi di autenticazione disponibili nelle librerie di gestione Python per Azure, vedere [Eseguire l'autenticazione con le librerie di gestione di Azure per Python](/python/azure/python-sdk-azure-authenticate).
 
@@ -65,15 +64,13 @@ Per altri dettagli sui metodi di autenticazione disponibili nelle librerie di ge
 
 Questo esempio crea un gruppo di contenitori con un singolo contenitore.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[create_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L94-L140 "Create single-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[create_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L94-L140 "Create single-container group")]
 
 ## <a name="create-container-group---multiple-containers"></a>Creare un gruppo di contenitori: più contenitori
 
 Questo esempio crea un gruppo di contenitori con due contenitori: un contenitore di applicazioni e un contenitore collaterale.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[create_container_group_multi](~/aci-docs-sample-python/src/aci_docs_sample.py#L143-L196 "Create multi-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[create_container_group_multi](~/aci-docs-sample-python/src/aci_docs_sample.py#L143-L196 "Create multi-container group")]
 
 ## <a name="create-task-based-container-group"></a>Creare un gruppo di contenitori basato su attività
 
@@ -92,8 +89,7 @@ Questo esempio crea un gruppo di contenitori con un singolo contenitore basato s
 * [Criteri di riavvio](/azure/container-instances/container-instances-restart-policy). Il contenitore viene configurato con il criterio di riavvio "Mai", utile per i contenitori basati su attività eseguiti come parte di un processo batch.
 * Polling dell'operazione con [AzureOperationPoller][AzureOperationPoller]. Dopo la chiamata del metodo di creazione, viene eseguito il polling dell'operazione per determinare se è stata completata e se è possibile ottenere i log del gruppo di contenitori.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[create_container_group_task](~/aci-docs-sample-python/src/aci_docs_sample.py#L199-L275 "Run a task-based container")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[create_container_group_task](~/aci-docs-sample-python/src/aci_docs_sample.py#L199-L275 "Run a task-based container")]
 
 ## <a name="list-container-groups"></a>Elencare i gruppi di contenitori
 
@@ -101,8 +97,7 @@ Questo esempio elenca i gruppi di contenitori in un gruppo di risorse e quindi s
 
 Quando si elencano i gruppi di contenitori, il valore della proprietà [instance_view][instance_view] di ogni gruppo restituito è `None`. Per ottenere i dettagli dei contenitori all'interno di un gruppo, è quindi necessario eseguire un'operazione [get][containergroupoperations_get] sul gruppo di contenitori, che restituirà il gruppo con la proprietà `instance_view` popolata. Per un esempio dell'iterazione sui contenitori di un gruppo in relazione alla proprietà `instance_view`, vedere la successiva sezione [Ottenere un gruppo di contenitori esistente](#get-an-existing-container-group).
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[list_container_groups](~/aci-docs-sample-python/src/aci_docs_sample.py#L278-L292 "List container groups")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[list_container_groups](~/aci-docs-sample-python/src/aci_docs_sample.py#L278-L292 "List container groups")]
 
 ## <a name="get-an-existing-container-group"></a>Ottenere un gruppo di contenitori esistente
 
@@ -110,15 +105,13 @@ Questo esempio ottiene un gruppo di contenitori specifico da un gruppo di risors
 
 L'[operazione get][containergroupoperations_get] restituisce un gruppo di contenitori con la proprietà [instance_view][instance_view] popolata, con cui è possibile eseguire l'iterazione su ogni contenitore del gruppo. La proprietà `instance_vew` del gruppo di contenitori viene popolata solo dall'operazione `get`. Elencando i gruppi di contenitori in una sottoscrizione o in un gruppo di risorse non viene popolata la visualizzazione dell'istanza perché si tratta di un'operazione potenzialmente dispendiosa, ad esempio se l'elenco include centinaia di gruppi di contenitori in ognuno dei quali potrebbero essere presenti più contenitori. Come indicato in precedenza nella sezione [Elencare i gruppi di contenitori](#list-container-groups), dopo un'operazione `list` è necessario eseguire un'operazione `get` su uno specifico gruppo di contenitori per ottenere i dettagli delle istanze di contenitore.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[get_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L295-L324 "Get container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[get_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L295-L324 "Get container group")]
 
 ## <a name="delete-a-container-group"></a>Eliminare un gruppo di contenitori
 
 Questo esempio elimina diversi gruppi di contenitori da un gruppo di risorse, nonché il gruppo di risorse.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
-[!code-python[delete_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L83-L91 "Delete container groups and resource group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[delete_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L83-L91 "Delete container groups and resource group")]
 
 ## <a name="next-steps"></a>Passaggi successivi
 

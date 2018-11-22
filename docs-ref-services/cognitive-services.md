@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 1f1dbaa77ee02a1da9386642e001f0a1a63a6599
-ms.sourcegitcommit: 61cc12fd4bb1a3ad5f9b79d1c616f005bc21c5d9
+ms.openlocfilehash: 736b2dd747842caa50418afc8219dafae655db39
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30849772"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277458"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Moduli di Servizi cognitivi di Azure per Python
 
@@ -54,7 +54,7 @@ pip install azure-cognitiveservices-vision-computervision
 
 [Altre informazioni](/azure/cognitive-services/content-moderator/overview) sul servizio Content Moderator.
 
-### <a name="custom-vision-service"></a>Servizio visione personalizzata
+### <a name="custom-vision-service"></a>Servizio visione artificiale personalizzato
 
 Caricare immagini per eseguire il training e personalizzare un modello di visione artificiale per il caso d'uso specifico. Dopo aver eseguito il training del modello, è possibile usare l'API per contrassegnare le immagini con il modello e valutare i risultati per migliorare il classificatore.
 
