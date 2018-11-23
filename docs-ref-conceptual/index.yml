@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 65fe229da00402bd107514993ee0f9141681f40b
-ms.sourcegitcommit: 16eecfc4ed0e2a8344ce5887327cdf2619ba89e4
+ms.openlocfilehash: b43b8597287347d3ae9d334f151b7e1514810321
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2018
-ms.locfileid: "39189561"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277133"
 documentType: LandingData
 title: Azure per sviluppatori Python
 metadata:
@@ -30,35 +30,21 @@ sections:
     columns: 3
     items:
     - href: https://docs.microsoft.com/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
-      html: <p>Creare e distribuire app Python in Azure</p>
       image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
-      title: Hosting di app contenitore
-    - href: https://docs.microsoft.com/en-us/azure/cognitive-services/face/quickstarts/python?toc=%2Fpython%2Fazure%2FTOC.json
-      html: <p>Rilevamento viso con Python SDK</p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/API_Face.svg
-      title: API Servizi cognitivi
+        src: https://docs.microsoft.com/azure/media/index/appservice.svg
+      title: Creare e distribuire app Web Python in Azure
     - href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-python?toc=%2Fpython%2Fazure%2FTOC.json
-      html: <p>Creare dati dei documenti ed eseguire query con l'API SQL</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-      title: Cosmos DB
-    - href: https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb
-      html: <p>Riconoscimento di modelli con notebook Jupyter</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_python.svg
-      title: Machine Learning
-    - href: https://azure.microsoft.com/resources/samples/?platform=python
-      html: <p>Esempi di codice di Azure che usano Python</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: Esempi di codice
+      title: Creare ed eseguire query sui dati in un database con replica globale in Azure
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/Storage.svg
+      title: Archiviare e recuperare i dati in modo sicuro in Azure
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-python?toc=%2Fpython%2Fazure%2FTOC.json
     - href: https://docs.microsoft.com/python/api?view=azure-python
-      html: <p>Moduli Python</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
-      title: Informazioni di riferimento sulle API
+      title: Informazioni di riferimento su Azure SDK per Python
 - title: Hosting di app
   items:
   - type: list
@@ -68,14 +54,19 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-      title: Servizio app
-      html: <p>Creare, distribuire e ridimensionare app Python in Linux o Windows</p>
-      href: https://docs.microsoft.com/azure/app-service/containers/tutorial-custom-docker-image?toc=%2Fpython%2Fazure%2FTOC.json
+      title: App Web
+      html: <p>Creare, distribuire e ridimensionare app Web Python in Linux</p>
+      href: https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
-      title: Kubernetes Service
+      title: Azure Kubernetes Service
       html: <p>Distribuire e gestire app in contenitori</p>
       href: https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/virtual-machines/media/index/virtual-machines.svg
+      title: Macchine virtuali
+      html: <p>Usare una distribuzione Linux o Windows Server per eseguire il codice su larga scala</p>
+      href: https://docs.microsoft.com//azure/virtual-machines/linux/quick-create-cli?toc=%2Fpython%2Fazure%2FTOC.json
 - title: Soluzioni per i dati
   items:
   - type: list
@@ -91,23 +82,33 @@ sections:
     - image:
         src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
       title: Cosmos DB
-      html: <p>Usare le API più diffuse con un database multimodello distribuito</p>
+      html: <p>Archiviare i dati in un servizio di database NoSQL distribuito a livello globale, ridimensionabile e multimodello</p>
       href: https://docs.microsoft.com/azure/cosmos-db/sql-api-python-application?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/azure/media/index/RedisCache.svg
       title: Cache Redis
       html: <p>Leggere e scrivere dati da Python a una cache Redis di Azure</p>
-      href: https://docs.microsoft.com/en-us/azure/redis-cache/cache-python-get-started?toc=%2Fpython%2Fazure%2FTOC.json
+      href: https://docs.microsoft.com/azure/redis-cache/cache-python-get-started?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/azure/media/index/PostgreSQL.svg
       title: Database di Azure per PostgreSQL
-      html: <p>Creare un'app Web Flask con PostgreSQL e distribuirla in Azure</p>
-      href: https://docs.microsoft.com/azure/app-service/containers/tutorial-docker-python-postgresql-app?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p>Creare un'istanza cloud di PostgreSQL e connettersi a tale istanza con Python</p>
+      href: https://docs.microsoft.com/azure/postgresql/quickstart-create-server-database-portal?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/azure/media/index/MySQL.SVG
       title: Database di Azure per MySQL
       html: <p>Creare un'istanza cloud di MySQL e connettersi a tale istanza con Python</p>
-      href: https://docs.microsoft.com/azure/mysql/connect-python?toc=%2Fpython%2Fazure%2FTOC.json
+      href: https://docs.microsoft.com/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/SQLDatabase.svg
+      title: Database SQL
+      html: <p>Configurare database relazionali sul cloud con un'istanza gestita di SQL Server</p>
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/hdinsight/media/index/spark_r.svg
+      title: Hadoop e Spark
+      html: <p>Usare un cluster Hadoop e Spark gestito con Azure HDInsights per carichi di lavoro di grandi dimensioni</p>
+      href: https://docs.microsoft.com/azure/hdinsight/hadoop/apache-hadoop-linux-create-cluster-get-started-portal?toc=%2Fpython%2Fazure%2FTOC.json
 - title: Intelligenza artificiale e Machine Learning
   items:
   - type: list
@@ -117,19 +118,19 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/azure/media/index/MachineLearning.svg
-      title: Machine Learning
-      html: <p>Creare applicazioni in grado di rilevare, elaborare e agire in base alle informazioni in modo intelligente</p>
+      title: Azure Machine Learning
+      html: <p>Creare applicazioni in grado di ridimensionare, elaborare e agire in base alle informazioni in modo intelligente</p>
       href: https://docs.microsoft.com/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-1?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
-        src: https://docs.microsoft.com/azure/media/index/batch-ai.svg
-      title: Intelligenza artificiale per Batch
-      html: <p>Eseguire un processo di training di CNTK in un cluster GPU a nodo singolo</p>
-      href: https://docs.microsoft.com/azure/batch-ai/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_python.svg
+        src: https://docs.microsoft.com/en-us/python/azure/media/AzureNotebooks.png
       title: Notebook di Azure
-      html: <p>Creare e condividere gratuitamente notebook Jupyter nel cloud</p>
+      html: <p>Eseguire esperimenti di data science Python usando un notebook Jupyter completamente gestito</p>
       href: https://notebooks.azure.com/
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/virtual-machines/media/index/virtual-machines.svg
+      title: Macchina virtuale di data science
+      html: <p>Usare un ambiente di data science coerente che contiene gli strumenti più diffusi per data science</p>
+      href: https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro?toc=%2Fpython%2Fazure%2FTOC.json
 - title: Sicurezza e integrazione
   items:
   - type: list
@@ -140,12 +141,12 @@ sections:
     - image:
         src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
       title: Key Vault
-      html: <p>Proteggere le chiavi e i segreti usati da servizi e app cloud</p>
+      html: <p>Salvaguardare le chiavi crittografiche e i segreti usati dalle app e dai servizi cloud</p>
       href: https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/azure/media/index/ServiceBus.svg
       title: Bus di servizio
-      html: <p>Servizio di messaggistica affidabile per app distribuite e microservizi</p>
+      html: <p>Inviare in modo affidabile messaggi tra app e microservizi distribuiti</p>
       href: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues?toc=%2Fpython%2Fazure%2FTOC.json
 - title: Strumenti ed estensioni
   items:
@@ -154,8 +155,8 @@ sections:
     className: cardsM
     columns: 3
     items:
-    - href: https://code.visualstudio.com/docs/azure/extensions
-      html: <p>Estensioni di Azure per Visual Studio Code</p>
+    - href: https://code.visualstudio.com/docs/python/python-tutorial
+      html: <p>Sviluppare app Python e distribuirle in Azure con le estensioni di Azure per Visual Studio Code</p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
       title: Visual Studio Code
@@ -163,9 +164,14 @@ sections:
       html: <p>Strumenti di sviluppo, profilatura, debug e IntelliSense per Python</p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: Python in Visual Studio
+      title: IDE di Visual Studio
     - href: https://docs.microsoft.com/cli/azure?toc=%2Fpython%2Fazure%2FTOC.json
-      html: <p><a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Gestire le risorse di Azure dalla riga di comando</a></p>
+      html: <p>Gestire le risorse di Azure dalla riga di comando</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/azure_dev-7.svg
-      title: Interfaccia della riga di comando di Azure 2.0
+      title: Interfaccia della riga di comando di Azure
+    - href: https://docs.microsoft.com/en-us/windows/wsl/install-win10?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p>Eseguire le applicazioni Linux in modalità nativa in Windows 10 con una vasta gamma di distribuzioni supportate</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/logos/logo_linux-color.svg
+      title: Sottosistema di Windows per Linux

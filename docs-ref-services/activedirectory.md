@@ -10,31 +10,30 @@ ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: active-directory
-ms.openlocfilehash: 78df70001dd0d55ac2c9c9da04fac6a51c5919e6
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 4cf4149dfbd8209020e3affc0d15ab870f8d9697
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478924"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276745"
 ---
-# <a name="azure-active-directory-libraries-for-python"></a><span data-ttu-id="a28a3-104">Librerie di Azure Active Directory per Python</span><span class="sxs-lookup"><span data-stu-id="a28a3-104">Azure Active Directory libraries for Python</span></span>
+# <a name="azure-active-directory-libraries-for-python"></a><span data-ttu-id="40a20-104">Librerie di Azure Active Directory per Python</span><span class="sxs-lookup"><span data-stu-id="40a20-104">Azure Active Directory libraries for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="a28a3-105">Panoramica</span><span class="sxs-lookup"><span data-stu-id="a28a3-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="40a20-105">Panoramica</span><span class="sxs-lookup"><span data-stu-id="40a20-105">Overview</span></span>
 
-<span data-ttu-id="a28a3-106">Con [Azure Active Directory](/azure/active-directory/active-directory-whatis) è possibile consentire l'accesso degli utenti e controllare l'accesso ad applicazioni e API.</span><span class="sxs-lookup"><span data-stu-id="a28a3-106">Sign-on users and control access to applications and APIs with [Azure Active Directory](/azure/active-directory/active-directory-whatis).</span></span>
+<span data-ttu-id="40a20-106">Con [Azure Active Directory](/azure/active-directory/active-directory-whatis) è possibile consentire l'accesso degli utenti e controllare l'accesso ad applicazioni e API.</span><span class="sxs-lookup"><span data-stu-id="40a20-106">Sign-on users and control access to applications and APIs with [Azure Active Directory](/azure/active-directory/active-directory-whatis).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="a28a3-107">Libreria client</span><span class="sxs-lookup"><span data-stu-id="a28a3-107">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="40a20-107">Libreria client</span><span class="sxs-lookup"><span data-stu-id="40a20-107">Client library</span></span>
 
-<span data-ttu-id="a28a3-108">Configurare l'autenticazione OAuth2, OpenID Connect o Active Directory Graph e l'accesso Single Sign-On [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) con [Azure Active Directory Authentication Library (ADAL) per Python](https://github.com/AzureAD/azure-activedirectory-library-for-python).</span><span class="sxs-lookup"><span data-stu-id="a28a3-108">Configure OAuth2, OpenID Connect, or Active Directory Graph authentication and [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) single-sign on with the [Azure Active Directory authentication library (ADAL) for Python](https://github.com/AzureAD/azure-activedirectory-library-for-python).</span></span>
+<span data-ttu-id="40a20-108">Configurare l'autenticazione OAuth2, OpenID Connect o Active Directory Graph e l'accesso Single Sign-On [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) con [Azure Active Directory Authentication Library (ADAL) per Python](https://github.com/AzureAD/azure-activedirectory-library-for-python).</span><span class="sxs-lookup"><span data-stu-id="40a20-108">Configure OAuth2, OpenID Connect, or Active Directory Graph authentication and [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) single-sign on with the [Azure Active Directory authentication library (ADAL) for Python](https://github.com/AzureAD/azure-activedirectory-library-for-python).</span></span>
 
 ```bash
 pip install azure-graphrbac
 ```
 
-### <a name="example"></a><span data-ttu-id="a28a3-109">Esempio</span><span class="sxs-lookup"><span data-stu-id="a28a3-109">Example</span></span>
+### <a name="example"></a><span data-ttu-id="40a20-109">Esempio</span><span class="sxs-lookup"><span data-stu-id="40a20-109">Example</span></span>
 > [!NOTE]
-> <span data-ttu-id="a28a3-110">È necessario modificare il parametro della risorsa in https://graph.windows.net durante la creazione dell'istanza delle credenziali</span><span class="sxs-lookup"><span data-stu-id="a28a3-110">You need to change the resource parameter to https://graph.windows.net while creating the credentials instance</span></span>
+> <span data-ttu-id="40a20-110">È necessario modificare il parametro della risorsa in https://graph.windows.net durante la creazione dell'istanza delle credenziali</span><span class="sxs-lookup"><span data-stu-id="40a20-110">You need to change the resource parameter to https://graph.windows.net while creating the credentials instance</span></span>
 
 ```python
 from azure.graphrbac import GraphRbacManagementClient
@@ -53,7 +52,7 @@ graphrbac_client = GraphRbacManagementClient(
     tenant_id
 )
 ```
-<span data-ttu-id="a28a3-111">Il codice seguente consente di creare un utente, di ottenerlo direttamente e tramite l'applicazione di filtri all'elenco e quindi di eliminarlo.</span><span class="sxs-lookup"><span data-stu-id="a28a3-111">The following code creates a user, get it directly and by list filtering, and then delete it.</span></span>
+<span data-ttu-id="40a20-111">Il codice seguente consente di creare un utente, di ottenerlo direttamente e tramite l'applicazione di filtri all'elenco e quindi di eliminarlo.</span><span class="sxs-lookup"><span data-stu-id="40a20-111">The following code creates a user, get it directly and by list filtering, and then delete it.</span></span>
 ```python
 from azure.graphrbac.models import UserCreateParameters, PasswordProfile
 
@@ -82,6 +81,6 @@ graphrbac_client.users.delete(user.object_id)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="a28a3-112">Esplorare le API client</span><span class="sxs-lookup"><span data-stu-id="a28a3-112">Explore the Client APIs</span></span>](/python/api/overview/azure/activedirectory/client)
+> [<span data-ttu-id="40a20-112">Esplorare le API client</span><span class="sxs-lookup"><span data-stu-id="40a20-112">Explore the Client APIs</span></span>](/python/api/overview/azure/activedirectory/client)
 
-<span data-ttu-id="a28a3-113">Esplorare altri [esempi di codice Python per Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=python) disponibili per l'uso nelle app.</span><span class="sxs-lookup"><span data-stu-id="a28a3-113">Explore more [sample Python code for Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=python) you can use in your apps.</span></span>
+<span data-ttu-id="40a20-113">Esplorare altri [esempi di codice Python per Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=python) disponibili per l'uso nelle app.</span><span class="sxs-lookup"><span data-stu-id="40a20-113">Explore more [sample Python code for Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=python) you can use in your apps.</span></span>
