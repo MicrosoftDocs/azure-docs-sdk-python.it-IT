@@ -1,4 +1,4 @@
-﻿---
+---
 title: Anteprima di Azure HDInsight Python SDK
 description: Informazioni di riferimento per Azure HDInsight Python SDK. HDInsight Python SDK offre classi e metodi che consentono di gestire i cluster HDInsight.
 ms.service: hdinsight
@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 09/18/2018
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 42e1e36b5854fda93188564be3ed3064b9ba4435
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 9447d50fd734bd9221accbf470a456210bb57a7f
+ms.sourcegitcommit: e2e4b1ecfac9804a72973477634128061c1ec990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277471"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53455108"
 ---
 # <a name="hdinsight-python-management-sdk-preview"></a>Anteprima di HDInsight Python Management SDK
 
@@ -37,7 +37,7 @@ HDInsight Python SDK è disponibile nell'[indice di pacchetti Python](https://py
 L'SDK deve essere prima autenticato con la sottoscrizione di Azure.  Seguire questo esempio per creare un'entità servizio e usarla per l'autenticazione. Al termine si avrà un'istanza di un `HDInsightManagementClient` che contiene molti metodi, descritti nelle sezioni seguenti, che possono essere usati per operazioni di gestione.
 
 > [!NOTE]
-> Oltre all'esempio seguente esistono altre modalità di autenticazione che possono essere più adatte alle proprie esigenze. Tutti i metodi sono descritti in [Eseguire l'autenticazione con le librerie di gestione di Azure per Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)
+> Oltre all'esempio seguente esistono altre modalità di autenticazione che possono essere più adatte alle proprie esigenze. Tutti i metodi sono descritti di seguito: [Eseguire l'autenticazione con le librerie di gestione di Azure per Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)
 
 ### <a name="authentication-example-using-a-service-principal"></a>Esempio di autenticazione con un'entità servizio
 
@@ -310,7 +310,7 @@ client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={<Diction
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={"tag1Name" : "tag1Value", "tag2Name" : "tag2Value"})
 ```
 
-### <a name="scale-cluster"></a>Ridimensionare un cluster
+### <a name="resize-cluster"></a>Ridimensionare un cluster
 
 È possibile ridimensionare il numero di nodi di ruolo di lavoro di un dato cluster specificando una nuova dimensione nel modo seguente:
 
@@ -325,7 +325,7 @@ HDInsight Management SDK può essere usato anche per gestire il monitoraggio dei
 ### <a name="enable-oms-monitoring"></a>Abilitare il monitoraggio di OMS
 
 > [!NOTE]
-> Per abilitare il monitoraggio di OMS è necessaria un'area di lavoro di Log Analytics esistente. Se l'area non è stata ancora creata, vedere [Creare un'area di lavoro di Log Analytics nel portale di Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace) per informazioni su come crearla.
+> Per abilitare il monitoraggio di OMS è necessaria un'area di lavoro di Log Analytics esistente. Se non è già stata creata una, è possibile ottenere informazioni su come farlo qui: [Creare un'area di lavoro di Log Analytics nel portale di Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Per abilitare il monitoraggio di OMS nel cluster:
 
@@ -353,7 +353,7 @@ client.extension.disable_monitoring("<Resource Group Name>", "<Cluster Name>")
 
 HDInsight offre un metodo di configurazione denominato "azioni script" che richiama script personalizzati per il cluster.
 > [!NOTE]
-> Per altre informazioni sulle azioni script, vedere [Personalizzare i cluster HDInsight basati su Linux tramite azioni script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
+> Altre informazioni su come usare le azioni dello script sono disponibili qui: [Personalizzare i cluster HDInsight basati su Linux tramite azioni script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
 
 ### <a name="execute-script-actions"></a>Eseguire azioni script
 Per eseguire azioni script in un cluster specifico:
