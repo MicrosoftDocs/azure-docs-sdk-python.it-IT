@@ -59,7 +59,7 @@ sections:
       href: https://docs.microsoft.com/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
-      title: Azure Kubernetes Service
+      title: Servizio Azure Kubernetes
       html: <p>Distribuire e gestire app in contenitori</p>
       href: https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
