@@ -1,6 +1,6 @@
 ---
-title: Librerie del Registro contenitori di Azure per Python
-description: Informazioni di riferimento sulle librerie del Registro contenitori di Azure per Python
+title: Librerie di Registro Azure Container per Python
+description: Informazioni di riferimento sulle librerie di Registro Azure Container per Python
 keywords: Azure, Python, SDK, API, registro contenitori
 author: sptramer
 ms.author: sttramer
@@ -18,7 +18,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2018
 ms.locfileid: "52273067"
 ---
-# <a name="azure-container-registry-libraries-for-python"></a>Librerie del Registro contenitori di Azure per Python
+# <a name="azure-container-registry-libraries-for-python"></a>Librerie di Registro Azure Container per Python
 
 ## <a name="install-the-libraries"></a>Installare le librerie
 
