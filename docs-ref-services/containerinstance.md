@@ -1,6 +1,6 @@
 ---
-title: Librerie di Istanze di contenitore di Azure per Python
-description: Informazioni di riferimento sulle librerie di Istanze di contenitore di Azure per Python
+title: Librerie di Istanze di Azure Container per Python
+description: Informazioni di riferimento sulle librerie di Istanze di Azure Container per Python
 keywords: Azure, Python, SDK, API, Istanze di contenitore di Azure, contenitore, istanze
 author: mmacy
 manager: jeconnoc
@@ -18,13 +18,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2018
 ms.locfileid: "52273017"
 ---
-# <a name="azure-container-instances-libraries-for-python"></a>Librerie di Istanze di contenitore di Azure per Python
+# <a name="azure-container-instances-libraries-for-python"></a>Librerie di Istanze di Azure Container per Python
 
-Usare le librerie di Istanze di contenitore di Microsoft Azure per Python per creare e gestire istanze di contenitore di Azure. Per altre informazioni, vedere [Panoramica di Istanze di contenitore di Azure](/azure/container-instances/container-instances-overview).
+Usare le librerie di Istanze di Container di Microsoft Azure per Python per creare e gestire Istanze di Azure Container. Per altre informazioni, vedere [Panoramica di Istanze di Azure Container](/azure/container-instances/container-instances-overview).
 
 ## <a name="management-apis"></a>API di gestione
 
-Usare la libreria di gestione per creare e gestire istanze di contenitore di Azure in Azure.
+È possibile usare la libreria di gestione per creare e gestire Istanze di Azure Container in Azure.
 
 Installare il pacchetto di gestione tramite pip:
 
@@ -40,7 +40,7 @@ Se si preferisce visualizzarli nel contesto, gli esempi di codice riportati di s
 
 ## <a name="authentication"></a>Authentication
 
-Per autenticare i client SDK, come i client di Resource Manager e Istanze di contenitore di Azure nell'esempio seguente, uno dei metodi più semplici è l'[autenticazione basata su file](/python/azure/python-sdk-azure-authenticate#mgmt-auth-file). Con l'autenticazione basata su file vengono eseguite query sulla variabile di ambiente `AZURE_AUTH_LOCATION` per individuare il percorso di un file delle credenziali. Per usare l'autenticazione basata su file:
+Per autenticare i client SDK, come i client di Resource Manager e Istanze di Azure Container nell'esempio seguente, uno dei metodi più semplici è l'[autenticazione basata su file](/python/azure/python-sdk-azure-authenticate#mgmt-auth-file). Con l'autenticazione basata su file vengono eseguite query sulla variabile di ambiente `AZURE_AUTH_LOCATION` per individuare il percorso di un file delle credenziali. Per usare l'autenticazione basata su file:
 
 1. Creare un file delle credenziali con l'[interfaccia della riga di comando di Azure](/cli/azure) o [Cloud Shell](https://shell.azure.com/):
 
@@ -119,7 +119,7 @@ Questo esempio elimina diversi gruppi di contenitori da un gruppo di risorse, no
 
   [Azure-Samples/aci-docs-sample-python][aci-docs-sample-python]
 
-* Altri esempi di codice per Istanze di contenitore di Azure:
+* Altri esempi di codice per Istanze di Azure Container:
 
   [Esempi di codice per Azure][samples-aci]
 
