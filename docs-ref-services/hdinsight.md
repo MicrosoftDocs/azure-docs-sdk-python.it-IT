@@ -325,7 +325,7 @@ HDInsight Management SDK può essere usato anche per gestire il monitoraggio dei
 ### <a name="enable-oms-monitoring"></a>Abilitare il monitoraggio di OMS
 
 > [!NOTE]
-> Per abilitare il monitoraggio di OMS è necessaria un'area di lavoro di Log Analytics esistente. Se non è già stata creata una, è possibile ottenere informazioni su come farlo qui: [Creare un'area di lavoro di Log Analytics nel portale di Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Per abilitare il monitoraggio di OMS è necessaria un'area di lavoro Log Analytics esistente. Se non è già stata creata una, è possibile ottenere informazioni su come farlo qui: [Creare un'area di lavoro di Log Analytics nel portale di Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Per abilitare il monitoraggio di OMS nel cluster:
 
