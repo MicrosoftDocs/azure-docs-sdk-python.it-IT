@@ -1,24 +1,24 @@
 ---
-title: Anteprima di Azure HDInsight Python SDK
-description: Informazioni di riferimento per Azure HDInsight Python SDK. HDInsight Python SDK offre classi e metodi che consentono di gestire i cluster HDInsight.
+title: Azure HDInsight SDK per Python
+description: Informazioni di riferimento per Azure HDInsight SDK per Python. HDInsight SDK per Python fornisce classi e metodi che consentono di gestire i cluster HDInsight.
 ms.service: hdinsight
 author: tylerfox
 ms.author: tyfox
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 8d081739a3984e1cd3f7bbf31fcb44d63cfb6947
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
+ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747711"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504548"
 ---
-# <a name="hdinsight-python-management-sdk-preview"></a>Anteprima di HDInsight Python Management SDK
+# <a name="hdinsight-sdk-for-python"></a>HDInsight SDK per Python
 
 ## <a name="overview"></a>Panoramica
 
-HDInsight Python SDK offre classi e metodi che consentono di gestire i cluster HDInsight. Include operazioni per creare, eliminare, aggiornare, elencare, ridimensionare, eseguire azioni di script, monitorare, ottenere le proprietà dei cluster di HDInsight e altro ancora.
+HDInsight SDK per Python fornisce classi e metodi che consentono di gestire i cluster HDInsight. Include operazioni per creare, eliminare, aggiornare, elencare, ridimensionare, eseguire azioni di script, monitorare, ottenere le proprietà dei cluster di HDInsight e altro ancora.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -28,7 +28,7 @@ HDInsight Python SDK offre classi e metodi che consentono di gestire i cluster H
 
 ## <a name="sdk-installation"></a>Installazione dell'SDK
 
-HDInsight Python SDK è disponibile nell'[indice di pacchetti Python](https://pypi.org/project/azure-mgmt-hdinsight/) e può essere installato eseguendo questo comando: 
+HDInsight SDK per Python è disponibile nell'[indice di pacchetti Python](https://pypi.org/project/azure-mgmt-hdinsight/) e può essere installato eseguendo questo comando: 
 
 `pip install azure-mgmt-hdinsight`
 
@@ -236,6 +236,10 @@ client.clusters.create(
     ))
 ```
 
+#### <a name="samples"></a>Esempi
+
+Sono anche disponibili esempi di codice per la creazione di diversi tipi comuni di cluster HDInsight: [Esempi di HDInsight per Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).
+
 ### <a name="get-cluster-details"></a>Ottenere i dettagli del cluster
 
 Per ottenere le proprietà di un dato cluster:
@@ -325,7 +329,7 @@ HDInsight Management SDK può essere usato anche per gestire il monitoraggio dei
 ### <a name="enable-oms-monitoring"></a>Abilitare il monitoraggio di OMS
 
 > [!NOTE]
-> Per abilitare il monitoraggio di OMS è necessaria un'area di lavoro Log Analytics esistente. Se non è già stata creata una, è possibile ottenere informazioni su come farlo qui: [Creare un'area di lavoro di Log Analytics nel portale di Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Per abilitare il monitoraggio di OMS è necessaria un'area di lavoro Log Analytics esistente. Se non è già stata creata una, è possibile ottenere informazioni su come farlo qui: [Creare un'area di lavoro Log Analytics nel portale di Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Per abilitare il monitoraggio di OMS nel cluster:
 
