@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
-ms.openlocfilehash: adea3dfd1e38fb8c880009d5a02ab2b8be2a67e1
-ms.sourcegitcommit: a1248376a21fc9a9441ab1fb982a477bce48f565
+ms.openlocfilehash: 78750d5f98ab81401c48493aff98d4268c01850d
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "29478824"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376709"
 ---
 # <a name="azure-virtual-machine-libraries"></a>Librerie delle macchine virtuali di Azure
 
@@ -33,8 +33,8 @@ Creare, configurare, gestire e ridimensionare le macchine virtuali Windows e Lin
 Installare la libreria tramite pip.
 
 ```bash
-pip install azure-mgmt-compute 
-```   
+pip install azure-mgmt-compute
+```
 
 ### <a name="example"></a>Esempio
 

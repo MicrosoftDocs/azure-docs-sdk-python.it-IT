@@ -11,18 +11,18 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: fb9528c449d197440590bfc3b1991065cfe13357
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478984"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376834"
 ---
 # <a name="azure-batch-libraries-for-python"></a>Librerie di Azure Batch per Python
 
 ## <a name="overview"></a>Panoramica
 
-Eseguire in modo efficiente applicazioni di calcolo a prestazioni elevate su larga scala nel cloud con [Azure Batch](/azure/batch/batch-technical-overview).   
+Eseguire in modo efficiente applicazioni di calcolo a prestazioni elevate su larga scala nel cloud con [Azure Batch](/azure/batch/batch-technical-overview).
 
 Per iniziare a usare Azure Batch, vedere [Creare un account Batch nel portale di Azure](/azure/batch/batch-account-create-portal).
 

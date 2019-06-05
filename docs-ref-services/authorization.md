@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 8709bbd3cff448c7beb394621b163a4b3e3c3cd8
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: ee562614e9745cdc38ae427728df16c117ff80cf
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52276765"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376717"
 ---
 # <a name="azure-authorization-libraries-for-python"></a>Librerie di autorizzazione di Azure per Python
 
@@ -51,12 +51,11 @@ authorization_client = AuthorizationManagementClient(
     credentials,
     subscription_id
 )
-``` 
+```
 
 ## <a name="check-permissions-for-a-resource-group"></a>Verificare le autorizzazioni per un gruppo di risorse
 
-Il codice seguente verifica le autorizzazioni in un dato gruppo di risorse.
-Per creare o gestire i gruppi di risorse,vedere [Gestione risorse](/python/api/overview/azure/azure.mgmt.resource).
+Il codice seguente verifica le autorizzazioni in un dato gruppo di risorse. Per creare o gestire i gruppi di risorse,vedere [Gestione risorse](/python/api/overview/azure/azure.mgmt.resource).
 
 ```python
 from azure.mgmt.redis.models import Sku, RedisCreateOrUpdateParameters
@@ -70,4 +69,3 @@ permissions = self.authorization_client.permissions.list_for_resource_group(
 
 > [!div class="nextstepaction"]
 > [Esplorare le API di gestione](/python/api/overview/azure/authorization/management)
-
