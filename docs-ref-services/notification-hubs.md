@@ -3,7 +3,7 @@ title: Librerie di Hub di notifica di Azure per Python
 description: Informazioni di riferimento sulle librerie di Hub di notifica di Azure per Python
 keywords: Azure, Python, SDK, API, Hub di notifica
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: routlaw
 ms.date: 02/22/2018
 ms.topic: article
@@ -11,28 +11,28 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: ea5ef3722635484d23459d1d39ec6216d4574b85
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: f600b28c347cdbffc16342da25a72e4de8e83c5f
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376911"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534249"
 ---
-# <a name="azure-notification-hubs-libraries-for-python"></a><span data-ttu-id="baa3f-104">Librerie di Hub di notifica di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="baa3f-104">Azure Notification Hubs libraries for python</span></span>
+# <a name="azure-notification-hubs-libraries-for-python"></a><span data-ttu-id="eeb07-104">Librerie di Hub di notifica di Azure per Python</span><span class="sxs-lookup"><span data-stu-id="eeb07-104">Azure Notification Hubs libraries for python</span></span>
 
-## <a name="management-apipythonapioverviewazurenotificationhubsmanagement"></a>[<span data-ttu-id="baa3f-105">API di gestione</span><span class="sxs-lookup"><span data-stu-id="baa3f-105">Management API</span></span>](/python/api/overview/azure/notificationhubs/management)
+## <a name="management-apipythonapioverviewazurenotificationhubsmanagement"></a>[<span data-ttu-id="eeb07-105">API di gestione</span><span class="sxs-lookup"><span data-stu-id="eeb07-105">Management API</span></span>](/python/api/overview/azure/notificationhubs/management)
 
 ```bash
 pip install azure-mgmt-notificationhubs
 ```
 
-## <a name="create-the-management-client"></a><span data-ttu-id="baa3f-106">Creare il client di gestione</span><span class="sxs-lookup"><span data-stu-id="baa3f-106">Create the management client</span></span>
+## <a name="create-the-management-client"></a><span data-ttu-id="eeb07-106">Creare il client di gestione</span><span class="sxs-lookup"><span data-stu-id="eeb07-106">Create the management client</span></span>
 
-<span data-ttu-id="baa3f-107">Il codice seguente crea un'istanza del client di gestione.</span><span class="sxs-lookup"><span data-stu-id="baa3f-107">The following code creates an instance of the management client.</span></span>
+<span data-ttu-id="eeb07-107">Il codice seguente crea un'istanza del client di gestione.</span><span class="sxs-lookup"><span data-stu-id="eeb07-107">The following code creates an instance of the management client.</span></span>
 
-<span data-ttu-id="baa3f-108">Sarà necessario specificare il proprio ``subscription_id``, recuperabile dall'[elenco delle sottoscrizioni](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="baa3f-108">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
+<span data-ttu-id="eeb07-108">Sarà necessario specificare il proprio ``subscription_id``, recuperabile dall'[elenco delle sottoscrizioni](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="eeb07-108">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
 
-<span data-ttu-id="baa3f-109">Vedere [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) (Autenticazione di gestione risorse) per informazioni dettagliate sulla gestione dell'autenticazione di Azure Active Directory con Python SDK e sulla creazione di un'istanza di ``Credentials``.</span><span class="sxs-lookup"><span data-stu-id="baa3f-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
+<span data-ttu-id="eeb07-109">Vedere [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) (Autenticazione di gestione risorse) per informazioni dettagliate sulla gestione dell'autenticazione di Azure Active Directory con Python SDK e sulla creazione di un'istanza di ``Credentials``.</span><span class="sxs-lookup"><span data-stu-id="eeb07-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
 
 ```python
 from azure.mgmt.notificationhubs import NotificationHubsManagementClient
@@ -53,9 +53,9 @@ redis_client = NotificationHubsManagementClient(
 )
 ```
 
-## <a name="check-namespace-availability"></a><span data-ttu-id="baa3f-110">Verificare la disponibilità dello spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="baa3f-110">Check namespace availability</span></span>
+## <a name="check-namespace-availability"></a><span data-ttu-id="eeb07-110">Verificare la disponibilità dello spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="eeb07-110">Check namespace availability</span></span>
 
-<span data-ttu-id="baa3f-111">Il codice seguente verifica la disponibilità dello spazio dei nomi di un hub di notifica.</span><span class="sxs-lookup"><span data-stu-id="baa3f-111">The following code check namespace availability of a notification hub.</span></span>
+<span data-ttu-id="eeb07-111">Il codice seguente verifica la disponibilità dello spazio dei nomi di un hub di notifica.</span><span class="sxs-lookup"><span data-stu-id="eeb07-111">The following code check namespace availability of a notification hub.</span></span>
 
 ```python
 from azure.mgmt.notificationhubs.models import CheckAvailabilityParameters
@@ -71,4 +71,4 @@ print(output.is_availiable) # Yes, it's 'availiable', it's a typo in the REST AP
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="baa3f-112">Esplorare le API di gestione</span><span class="sxs-lookup"><span data-stu-id="baa3f-112">Explore the Management APIs</span></span>](/python/api/overview/azure/notificationhubs/management)
+> [<span data-ttu-id="eeb07-112">Esplorare le API di gestione</span><span class="sxs-lookup"><span data-stu-id="eeb07-112">Explore the Management APIs</span></span>](/python/api/overview/azure/notificationhubs/management)
