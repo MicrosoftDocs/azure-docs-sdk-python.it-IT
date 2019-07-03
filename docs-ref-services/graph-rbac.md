@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 27238e00463ae30ec0e47e8c18497ffb9edac62c
-ms.sourcegitcommit: 253c8d4b3dbc2bb76d1a273a757ab96ba37617a1
+ms.openlocfilehash: e9b0aba7998565284ae18e0036da96d033b2b05f
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65731537"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534272"
 ---
 # <a name="azure-active-directory-graph-libraries-for-python"></a>Librerie di Azure Active Directory Graph per Python
 
@@ -30,7 +30,7 @@ ms.locfileid: "65731537"
 
 ## <a name="overview"></a>Panoramica 
 
-Con [Active Directory Graph](/azure/active-directory/develop/active-directory-graph-apis) è possibile consentire l'accesso degli utenti e controllare l'accesso ad applicazioni e API.   
+Con [Active Directory Graph](/azure/active-directory/develop/active-directory-graph-api) è possibile consentire l'accesso degli utenti e controllare l'accesso ad applicazioni e API.    
 
 ## <a name="client-library"></a>Libreria client   
 

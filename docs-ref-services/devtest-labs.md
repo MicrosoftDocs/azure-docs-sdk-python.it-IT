@@ -3,7 +3,7 @@ title: Librerie di Azure DevTest Labs per Python
 description: Informazioni di riferimento sulle librerie di Azure DevTest Labs per Python
 keywords: Azure, Python, SDK, API, DevTest Labs
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: routlaw
 ms.date: 02/21/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 3da9210dd14c19d591539656fb7229f4d3346ea9
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: f232a24dfba610b3fdf505b63788aecc7b8fa9f9
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376886"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534288"
 ---
 # <a name="azure-devtest-labs-libraries-for-python"></a>Librerie di Azure DevTest Labs per Python
 

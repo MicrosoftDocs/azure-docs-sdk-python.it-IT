@@ -3,18 +3,18 @@ title: Librerie della Griglia di eventi di Azure per Python
 description: ''
 keywords: Azure, Python, SDK, API, Griglia di eventi
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: routlaw
 ms.date: 08/21/2017
 ms.topic: article
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: bfaa1908295eb77531e399f1337acdeee512005f
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: e5df1078116f13f959923eac3e0c7b5789545278
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52276835"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534292"
 ---
 # <a name="event-grid-libraries-for-python"></a>Librerie della Griglia di eventi per Python
 
@@ -88,7 +88,7 @@ pip install azure-mgmt-eventgrid
 ### <a name="example"></a>Esempio
 
 L'esempio seguente crea un argomento personalizzato e iscrive un endpoint all'argomento. Il codice invia quindi un evento all'argomento tramite HTTPS.
-RequestBin è uno strumento open source di terze parti che consente di creare un endpoint e visualizza le richieste che gli vengono inviate. Passare a [RequestBin](https://requestb.in/) e fare clic su **Create a RequestBin** (Crea un RequestBin). Copiare l'URL del contenitore, necessario per sottoscrivere l'argomento.
+RequestBin è uno strumento open source di terze parti che consente di creare un endpoint e visualizza le richieste che gli vengono inviate. Passare a [RequestBin](https://requestbin.com) e fare clic su **Create a RequestBin** (Crea un RequestBin). Copiare l'URL del contenitore, necessario per sottoscrivere l'argomento.
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient

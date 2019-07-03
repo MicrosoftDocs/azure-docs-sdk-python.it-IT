@@ -3,7 +3,7 @@ title: Librerie di Azure per Python
 description: Panoramica delle librerie di gestione e di servizi di Azure per Python
 keywords: Azure, Python, SDK, API
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/01/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: ''
-ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: bb17295de2f0272f0525fda5edab87e840764478
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478804"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534463"
 ---
 # <a name="azure-libraries-for-python"></a>Librerie di Azure per Python
 
@@ -83,4 +83,4 @@ Le [informazioni di riferimento](/python/api/overview/azure) sono disponibili pe
 
 ## <a name="get-help-and-give-feedback"></a>Ottenere supporto e inviare commenti
 
-Pubblicare domande alla community su [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python) e segnalare problemi relativi all'SDK nel [progetto di GitHub](https://github.com/Azure/azure-sdk-for-python).
+Pubblicare domande alla community su [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-sdk-python) e segnalare problemi relativi all'SDK nel [progetto di GitHub](https://github.com/Azure/azure-sdk-for-python).
