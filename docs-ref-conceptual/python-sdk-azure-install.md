@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6014937fb41d6074e94578ccc47c30eb7b3f63d2
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: 9fd11cbc7b987b970ceee85c7b11b22e3d6299ea
+ms.sourcegitcommit: 31d7df367b15ec09a5a610eb333295bba0f6b351
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376881"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67395442"
 ---
 # <a name="installation"></a>Installazione
 
@@ -77,3 +77,24 @@ git clone git://github.com/Azure/azure-sdk-for-python.git
 cd azure-sdk-for-python
 python setup.py install
 ```
+
+## <a name="install-an-older-version-with-pip"></a>Installare una versione precedente con pip
+È possibile installare una versione precedente di `azure` specificando 'azure==3.0.0' come dettagli della versione.
+```bash
+pip install azure==3.0.0 
+```
+## <a name="check-sdk-installation-details-with-pip"></a>Controllare i dettagli dell'installazione dell'SDK con pip
+È possibile controllare il percorso di installazione e i dettagli della versione dell'SDK per `azure`, oltre ad altre informazioni.
+```bash
+pip show azure # Show installed version, location details etc.
+pip freeze     # Output installed packages in requirements format.
+pip list       # List installed packages, including editables.
+```
+## <a name="to-uninstall-with-pip"></a>Per eseguire la disinstallazione con pip
+È possibile disinstallare un set di librerie di Azure in una singola riga usando il meta pacchetto `azure`.
+```bash
+pip uninstall azure 
+```
+> [!NOTE]
+> Il comando `pip uninstall azure` consente di rimuovere il meta pacchetto `azure`, lasciando indietro i singoli pacchetti `azure-*`, oltre ad altri, quali `adal` e `msrest`. Una peculiarità di Python e pip è che se sono presenti pacchetti con dipendenze, disinstallando il pacchetto iniziale le dipendenze non verranno disinstallate. Per rimuovere `azure-` e i pacchetti di supporto, eseguire il comando `pip freeze | grep 'azure-' | xargs pip uninstall -y`, quindi eseguire separatamente le disinstallazioni di adal, msrest e msrestazure.
+
