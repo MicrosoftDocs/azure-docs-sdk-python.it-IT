@@ -3,7 +3,7 @@ title: Librerie delle risorse di Azure per Python
 description: ''
 keywords: Azure, Python, SDK, API, risorse
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/19/2017
 ms.topic: article
@@ -11,19 +11,19 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: resources
-ms.openlocfilehash: 32e13bee27db091f0bca12c7d9ae4fc62165f4c0
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: d708a5e7296b166b6e55b9b7b0d995e72e264267
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909394"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534376"
 ---
 # <a name="azure-resources-libraries-for-python"></a>Librerie delle risorse di Azure per Python 
 
 ## <a name="overview"></a>Panoramica 
 Gestire le risorse di Azure nei gruppi di risorse.
 
-| Pacchetto  |  Descrizione |
+| Pacchetto  |  DESCRIZIONE |
 |---|---|
 |[azure.mgmt.resource.features][1]|Azure Feature Exposure Control (AFEC) fornisce un meccanismo che consente ai provider di risorse di controllare l'esposizione delle funzionalità agli utenti.|
 |[azure.mgmt.resource.links][2]|Le risorse di Azure possono essere collegate tra loro per formare relazioni logiche. È possibile stabilire collegamenti tra le risorse appartenenti a gruppi di risorse diversi.|

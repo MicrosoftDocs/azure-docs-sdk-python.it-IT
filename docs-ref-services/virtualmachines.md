@@ -3,7 +3,7 @@ title: Librerie delle macchine virtuali di Azure per Python
 description: ''
 keywords: Azure, Python, SDK, API, calcolo, macchine virtuali
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/09/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
-ms.openlocfilehash: 78750d5f98ab81401c48493aff98d4268c01850d
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: e09ffed98f3f6050e34ca2cb39e645e30f8bdb15
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376709"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534181"
 ---
 # <a name="azure-virtual-machine-libraries"></a>Librerie delle macchine virtuali di Azure
 
@@ -77,8 +77,8 @@ def create_vm()
 ## <a name="samples"></a>Esempi
 
 * [Gestire le macchine virtuali][1]
-* [Eseguire l'autenticazione con l'identità del servizio gestito][2]
-* [Create a virtual machine with Managed Service Identity Extension][3] (Creare una macchina virtuale con l'estensione dell'identità del servizio gestito)
+* [Eseguire l'autenticazione con l'identità del servizio gestita][2]
+* [Creare una macchina virtuale con l'estensione dell'identità del servizio gestita][3]
 * [Gestire un servizio di bilanciamento del carico][4]
 * [Creare e configurare dischi gestiti][5]
 * [Elencare le immagini][6] 
