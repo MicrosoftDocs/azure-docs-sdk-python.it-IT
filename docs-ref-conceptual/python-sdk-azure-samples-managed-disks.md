@@ -9,25 +9,25 @@ ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
-ms.author: liwong
-ms.openlocfilehash: bee17efdb90d6365acb2adbf9c01d1f7e843da42
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.author: routlaw
+ms.openlocfilehash: 8618b42a545e2e36ccca8944ef1dc6cf49966b00
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376853"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534410"
 ---
-# <a name="managed-disks"></a><span data-ttu-id="6c65f-103">Managed Disks</span><span class="sxs-lookup"><span data-stu-id="6c65f-103">Managed Disks</span></span>
+# <a name="managed-disks"></a><span data-ttu-id="04d19-103">Managed Disks</span><span class="sxs-lookup"><span data-stu-id="04d19-103">Managed Disks</span></span>
 
-<span data-ttu-id="6c65f-104">Azure Managed Disks semplifica la gestione dei dischi, offre una scalabilità avanzata e migliore sicurezza e scalabilità.</span><span class="sxs-lookup"><span data-stu-id="6c65f-104">Azure Managed Disks provide a simplified disk Management, enhanced Scalability, better Security and Scale.</span></span> <span data-ttu-id="6c65f-105">Non sono più necessari account di archiviazione per i dischi. I clienti possono quindi ridimensionare senza doversi preoccupare delle limitazioni associate agli account di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="6c65f-105">It takes away the notion of storage account for disks, enabling customers to scale without worrying about the limitations associated with storage accounts.</span></span> <span data-ttu-id="6c65f-106">Questo post offre una rapida introduzione e informazioni di riferimento sull'utilizzo del servizio da Python.</span><span class="sxs-lookup"><span data-stu-id="6c65f-106">This post provides a quick introduction and reference on consuming the service from Python.</span></span>
+<span data-ttu-id="04d19-104">Azure Managed Disks semplifica la gestione dei dischi, offre una scalabilità avanzata e migliore sicurezza e scalabilità.</span><span class="sxs-lookup"><span data-stu-id="04d19-104">Azure Managed Disks provide a simplified disk Management, enhanced Scalability, better Security and Scale.</span></span> <span data-ttu-id="04d19-105">Non sono più necessari account di archiviazione per i dischi. I clienti possono quindi ridimensionare senza doversi preoccupare delle limitazioni associate agli account di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="04d19-105">It takes away the notion of storage account for disks, enabling customers to scale without worrying about the limitations associated with storage accounts.</span></span> <span data-ttu-id="04d19-106">Questo post offre una rapida introduzione e informazioni di riferimento sull'utilizzo del servizio da Python.</span><span class="sxs-lookup"><span data-stu-id="04d19-106">This post provides a quick introduction and reference on consuming the service from Python.</span></span>
 
-<span data-ttu-id="6c65f-107">Dal punto di vista degli sviluppatori, l'esperienza di Managed Disks nell'interfaccia della riga di comando di Azure è analoga all'esperienza dell'interfaccia della riga di comando in altri strumenti multipiattaforma.</span><span class="sxs-lookup"><span data-stu-id="6c65f-107">From a developer perspective, the Managed Disks experience in Azure CLI is idomatic to the CLI experience in other cross-platform tools.</span></span> <span data-ttu-id="6c65f-108">È possibile usare [Azure Python](https://azure.microsoft.com/develop/python/) SDK e il [pacchetto azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) per amministrare Managed Disks.</span><span class="sxs-lookup"><span data-stu-id="6c65f-108">You can use the [Azure Python](https://azure.microsoft.com/develop/python/) SDK and the [azure-mgmt-compute package 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) to administer Managed Disks.</span></span> <span data-ttu-id="6c65f-109">È possibile creare un client di calcolo usando questa [esercitazione](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).</span><span class="sxs-lookup"><span data-stu-id="6c65f-109">You can create a compute client using this [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).</span></span>
+<span data-ttu-id="04d19-107">Dal punto di vista degli sviluppatori, l'esperienza di Managed Disks nell'interfaccia della riga di comando di Azure è analoga all'esperienza dell'interfaccia della riga di comando in altri strumenti multipiattaforma.</span><span class="sxs-lookup"><span data-stu-id="04d19-107">From a developer perspective, the Managed Disks experience in Azure CLI is idomatic to the CLI experience in other cross-platform tools.</span></span> <span data-ttu-id="04d19-108">È possibile usare [Azure Python](https://azure.microsoft.com/develop/python/) SDK e il [pacchetto azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) per amministrare Managed Disks.</span><span class="sxs-lookup"><span data-stu-id="04d19-108">You can use the [Azure Python](https://azure.microsoft.com/develop/python/) SDK and the [azure-mgmt-compute package 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) to administer Managed Disks.</span></span> <span data-ttu-id="04d19-109">È possibile creare un client di calcolo usando questa [esercitazione](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).</span><span class="sxs-lookup"><span data-stu-id="04d19-109">You can create a compute client using this [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).</span></span>
 
-## <a name="standalone-managed-disks"></a><span data-ttu-id="6c65f-110">Dischi gestiti autonomi</span><span class="sxs-lookup"><span data-stu-id="6c65f-110">Standalone Managed Disks</span></span>
+## <a name="standalone-managed-disks"></a><span data-ttu-id="04d19-110">Dischi gestiti autonomi</span><span class="sxs-lookup"><span data-stu-id="04d19-110">Standalone Managed Disks</span></span>
 
-<span data-ttu-id="6c65f-111">È possibile creare con facilità dischi gestiti autonomi in molti modi.</span><span class="sxs-lookup"><span data-stu-id="6c65f-111">You can easily create standalone Managed Disks in a variety of ways.</span></span>
+<span data-ttu-id="04d19-111">È possibile creare con facilità dischi gestiti autonomi in molti modi.</span><span class="sxs-lookup"><span data-stu-id="04d19-111">You can easily create standalone Managed Disks in a variety of ways.</span></span>
 
-### <a name="create-an-empty-managed-disk"></a><span data-ttu-id="6c65f-112">Creare un disco gestito vuoto</span><span class="sxs-lookup"><span data-stu-id="6c65f-112">Create an empty Managed Disk</span></span>
+### <a name="create-an-empty-managed-disk"></a><span data-ttu-id="04d19-112">Creare un disco gestito vuoto</span><span class="sxs-lookup"><span data-stu-id="04d19-112">Create an empty Managed Disk</span></span>
 
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
@@ -46,7 +46,7 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-blob-storage"></a><span data-ttu-id="6c65f-113">Creare un disco gestito dall'archiviazione BLOB</span><span class="sxs-lookup"><span data-stu-id="6c65f-113">Create a Managed Disk from blob storage</span></span>
+### <a name="create-a-managed-disk-from-blob-storage"></a><span data-ttu-id="04d19-113">Creare un disco gestito dall'archiviazione BLOB</span><span class="sxs-lookup"><span data-stu-id="04d19-113">Create a Managed Disk from blob storage</span></span>
 
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
@@ -65,7 +65,30 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-your-own-image"></a><span data-ttu-id="6c65f-114">Creare un disco gestito da un'immagine personalizzata</span><span class="sxs-lookup"><span data-stu-id="6c65f-114">Create a Managed Disk from your own image</span></span>
+### <a name="create-an-image-from-blob-storage"></a><span data-ttu-id="04d19-114">Creare un'immagine dall'archiviazione BLOB</span><span class="sxs-lookup"><span data-stu-id="04d19-114">Create an image from blob storage</span></span>
+
+```python
+from azure.mgmt.compute.models import DiskCreateOption
+
+async_creation = compute_client.images.create_or_update(
+    'my_resource_group',
+    'my_image_name',
+    {
+        'location': 'eastus',
+        'storage_profile': {
+           'os_disk': {
+              'os_type': 'Linux',
+              'os_state': "Generalized",
+              'blob_uri': 'https://bg09.blob.core.windows.net/vm-images/non-existent.vhd',
+              'caching': "ReadWrite",
+           }
+        }        
+    }
+)
+image_resource = async_creation.result()
+```
+
+### <a name="create-a-managed-disk-from-your-own-image"></a><span data-ttu-id="04d19-115">Creare un disco gestito da un'immagine personalizzata</span><span class="sxs-lookup"><span data-stu-id="04d19-115">Create a Managed Disk from your own image</span></span>
 
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
@@ -87,11 +110,11 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-## <a name="virtual-machine-with-managed-disks"></a><span data-ttu-id="6c65f-115">Macchina virtuale con dischi gestiti</span><span class="sxs-lookup"><span data-stu-id="6c65f-115">Virtual machine with Managed Disks</span></span>
+## <a name="virtual-machine-with-managed-disks"></a><span data-ttu-id="04d19-116">Macchina virtuale con dischi gestiti</span><span class="sxs-lookup"><span data-stu-id="04d19-116">Virtual machine with Managed Disks</span></span>
 
-<span data-ttu-id="6c65f-116">È possibile creare una macchina virtuale con un disco gestito implicito per un'immagine del disco specifica.</span><span class="sxs-lookup"><span data-stu-id="6c65f-116">You can create a Virtual Machine with an implicit Managed Disk for a specific disk image.</span></span> <span data-ttu-id="6c65f-117">La creazione viene semplificata tramite la creazione implicita dei dischi gestiti, senza la necessità di specificare tutti i dettagli del disco.</span><span class="sxs-lookup"><span data-stu-id="6c65f-117">Creation is simplified with implicit creation of managed disks without specifying all the disk details.</span></span> <span data-ttu-id="6c65f-118">Non è necessario preoccuparsi della creazione e della gestione degli account di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="6c65f-118">You do not have to worry about creating and managing Storage Accounts.</span></span>
+<span data-ttu-id="04d19-117">È possibile creare una macchina virtuale con un disco gestito implicito per un'immagine del disco specifica.</span><span class="sxs-lookup"><span data-stu-id="04d19-117">You can create a Virtual Machine with an implicit Managed Disk for a specific disk image.</span></span> <span data-ttu-id="04d19-118">La creazione viene semplificata tramite la creazione implicita dei dischi gestiti, senza la necessità di specificare tutti i dettagli del disco.</span><span class="sxs-lookup"><span data-stu-id="04d19-118">Creation is simplified with implicit creation of managed disks without specifying all the disk details.</span></span> <span data-ttu-id="04d19-119">Non è necessario preoccuparsi della creazione e della gestione degli account di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="04d19-119">You do not have to worry about creating and managing Storage Accounts.</span></span>
 
-<span data-ttu-id="6c65f-119">Un disco gestito viene creato implicitamente durante la creazione di una VM da un'immagine del sistema operativo in Azure.</span><span class="sxs-lookup"><span data-stu-id="6c65f-119">A Managed Disk is created implicitly when creating VM from an OS image in Azure.</span></span> <span data-ttu-id="6c65f-120">Nel parametro ``storage_profile`` il valore ``os_disk`` è ora facoltativo e non è necessario creare un account di archiviazione come precondizione obbligatoria per la creazione di una macchina virtuale.</span><span class="sxs-lookup"><span data-stu-id="6c65f-120">In the ``storage_profile`` parameter, ``os_disk`` is now optional and you don't have to create a storage account as required precondition to create a Virtual Machine.</span></span>
+<span data-ttu-id="04d19-120">Un disco gestito viene creato implicitamente durante la creazione di una VM da un'immagine del sistema operativo in Azure.</span><span class="sxs-lookup"><span data-stu-id="04d19-120">A Managed Disk is created implicitly when creating VM from an OS image in Azure.</span></span> <span data-ttu-id="04d19-121">Nel parametro ``storage_profile`` il valore ``os_disk`` è ora facoltativo e non è necessario creare un account di archiviazione come precondizione obbligatoria per la creazione di una macchina virtuale.</span><span class="sxs-lookup"><span data-stu-id="04d19-121">In the ``storage_profile`` parameter, ``os_disk`` is now optional and you don't have to create a storage account as required precondition to create a Virtual Machine.</span></span>
 
 ```python
 storage_profile = azure.mgmt.compute.models.StorageProfile(
@@ -104,9 +127,21 @@ storage_profile = azure.mgmt.compute.models.StorageProfile(
 )
 ```
 
-<span data-ttu-id="6c65f-121">Questo parametro ``storage_profile`` è ora valido.</span><span class="sxs-lookup"><span data-stu-id="6c65f-121">This ``storage_profile`` parameter is now valid.</span></span> <span data-ttu-id="6c65f-122">Per ottenere un esempio completo della procedura di creazione di una VM in Python (incluse le risorse di rete e così via), vedere l'[esercitazione completa per le VM in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).</span><span class="sxs-lookup"><span data-stu-id="6c65f-122">To get a complete example on how to create a VM in Python (including network, etc), check the full [VM tutorial in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).</span></span>
+<span data-ttu-id="04d19-122">Questo parametro ``storage_profile`` è ora valido.</span><span class="sxs-lookup"><span data-stu-id="04d19-122">This ``storage_profile`` parameter is now valid.</span></span> <span data-ttu-id="04d19-123">Per ottenere un esempio completo della procedura di creazione di una VM in Python (incluse le risorse di rete e così via), vedere l'[esercitazione completa per le VM in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).</span><span class="sxs-lookup"><span data-stu-id="04d19-123">To get a complete example on how to create a VM in Python (including network, etc), check the full [VM tutorial in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).</span></span>
 
-<span data-ttu-id="6c65f-123">È possibile collegare con facilità un disco gestito sottoposto in precedenza a provisioning.</span><span class="sxs-lookup"><span data-stu-id="6c65f-123">You can easily attach a previously provisioned Managed Disk.</span></span>
+<span data-ttu-id="04d19-124">È anche possibile creare ``storage_profile`` dalla propria immagine:</span><span class="sxs-lookup"><span data-stu-id="04d19-124">You can also create a ``storage_profile`` from your own image:</span></span>
+
+```python
+# If you don't know the id, do a 'get' like this to obtain it
+image = compute_client.images.get(self.group_name, 'myImageDisk')
+storage_profile = azure.mgmt.compute.models.StorageProfile(
+    image_reference = azure.mgmt.compute.models.ImageReference(
+        id = image.id
+    )
+)
+```
+
+<span data-ttu-id="04d19-125">È possibile collegare con facilità un disco gestito sottoposto in precedenza a provisioning.</span><span class="sxs-lookup"><span data-stu-id="04d19-125">You can easily attach a previously provisioned Managed Disk.</span></span>
 
 ```python
 vm = compute.virtual_machines.get(
@@ -130,11 +165,11 @@ async_update = compute_client.virtual_machines.create_or_update(
 async_update.wait()
 ```
 
-## <a name="virtual-machine-scale-sets-with-managed-disks"></a><span data-ttu-id="6c65f-124">Set di scalabilità di macchine virtuali con Managed Disks</span><span class="sxs-lookup"><span data-stu-id="6c65f-124">Virtual machine Scale Sets with Managed Disks</span></span>
+## <a name="virtual-machine-scale-sets-with-managed-disks"></a><span data-ttu-id="04d19-126">Set di scalabilità di macchine virtuali con Managed Disks</span><span class="sxs-lookup"><span data-stu-id="04d19-126">Virtual machine Scale Sets with Managed Disks</span></span>
 
-<span data-ttu-id="6c65f-125">Senza Managed Disks, è necessario creare manualmente un account di archiviazione per tutte le VM da includere nel set di scalabilità e quindi usare il parametro di elenco ``vhd_containers`` per specificare i nomi di tutti gli account di archiviazione per l'API REST del set di scalabilità.</span><span class="sxs-lookup"><span data-stu-id="6c65f-125">Before Managed Disks, you needed to create a storage account manually for all the VMs you wanted inside your Scale Set, and then use the list parameter ``vhd_containers`` to provide all the storage account name to the Scale Set RestAPI.</span></span> <span data-ttu-id="6c65f-126">La guida ufficiale per la transizione è disponibile in questo articolo `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.</span><span class="sxs-lookup"><span data-stu-id="6c65f-126">The official transition guide is available in this article `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.</span></span>
+<span data-ttu-id="04d19-127">Senza Managed Disks, è necessario creare manualmente un account di archiviazione per tutte le VM da includere nel set di scalabilità e quindi usare il parametro di elenco ``vhd_containers`` per specificare i nomi di tutti gli account di archiviazione per l'API REST del set di scalabilità.</span><span class="sxs-lookup"><span data-stu-id="04d19-127">Before Managed Disks, you needed to create a storage account manually for all the VMs you wanted inside your Scale Set, and then use the list parameter ``vhd_containers`` to provide all the storage account name to the Scale Set RestAPI.</span></span> <span data-ttu-id="04d19-128">La guida ufficiale per la transizione è disponibile in questo articolo `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.</span><span class="sxs-lookup"><span data-stu-id="04d19-128">The official transition guide is available in this article `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.</span></span>
 
-<span data-ttu-id="6c65f-127">Con Managed Disk non è necessario gestire alcun account di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="6c65f-127">Now with Managed Disk, you don't have to manage any storage account at all.</span></span> <span data-ttu-id="6c65f-128">Se si ha familiarità con VMSS Python SDK, il valore di ``storage_profile`` può ora essere identico a quello usato durante la creazione delle VM:</span><span class="sxs-lookup"><span data-stu-id="6c65f-128">If you're are used to the VMSS Python SDK, your ``storage_profile`` can now be exactly the same as the one used in VM creation:</span></span>
+<span data-ttu-id="04d19-129">Con Managed Disk non è necessario gestire alcun account di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="04d19-129">Now with Managed Disk, you don't have to manage any storage account at all.</span></span> <span data-ttu-id="04d19-130">Se si ha familiarità con VMSS Python SDK, il valore di ``storage_profile`` può ora essere identico a quello usato durante la creazione delle VM:</span><span class="sxs-lookup"><span data-stu-id="04d19-130">If you're are used to the VMSS Python SDK, your ``storage_profile`` can now be exactly the same as the one used in VM creation:</span></span>
 
 ```python
 'storage_profile': {
@@ -147,7 +182,7 @@ async_update.wait()
 },
 ```
 
-<span data-ttu-id="6c65f-129">Ecco l'esempio completo:</span><span class="sxs-lookup"><span data-stu-id="6c65f-129">The full sample being:</span></span>
+<span data-ttu-id="04d19-131">Ecco l'esempio completo:</span><span class="sxs-lookup"><span data-stu-id="04d19-131">The full sample being:</span></span>
 
 ```python
 naming_infix = "PyTestInfix"
@@ -200,9 +235,9 @@ result_create = compute_client.virtual_machine_scale_sets.create_or_update(
 vmss_result = result_create.result()
 ```
 
-## <a name="other-operations-with-managed-disks"></a><span data-ttu-id="6c65f-130">Altre operazioni con Managed Disks</span><span class="sxs-lookup"><span data-stu-id="6c65f-130">Other operations with Managed Disks</span></span>
+## <a name="other-operations-with-managed-disks"></a><span data-ttu-id="04d19-132">Altre operazioni con Managed Disks</span><span class="sxs-lookup"><span data-stu-id="04d19-132">Other operations with Managed Disks</span></span>
 
-### <a name="resizing-a-managed-disk"></a><span data-ttu-id="6c65f-131">Ridimensionamento di un disco gestito</span><span class="sxs-lookup"><span data-stu-id="6c65f-131">Resizing a Managed Disk</span></span>
+### <a name="resizing-a-managed-disk"></a><span data-ttu-id="04d19-133">Ridimensionamento di un disco gestito</span><span class="sxs-lookup"><span data-stu-id="04d19-133">Resizing a Managed Disk</span></span>
 
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
@@ -215,7 +250,7 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="update-the-storage-account-type-of-the-managed-disks"></a><span data-ttu-id="6c65f-132">Aggiornare il tipo di account di archiviazione dei dischi gestiti</span><span class="sxs-lookup"><span data-stu-id="6c65f-132">Update the storage account type of the Managed Disks</span></span>
+### <a name="update-the-storage-account-type-of-the-managed-disks"></a><span data-ttu-id="04d19-134">Aggiornare il tipo di account di archiviazione dei dischi gestiti</span><span class="sxs-lookup"><span data-stu-id="04d19-134">Update the storage account type of the Managed Disks</span></span>
 
 ```python
 from azure.mgmt.compute.models import StorageAccountTypes
@@ -230,7 +265,7 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="create-an-image-from-nlob-storage"></a><span data-ttu-id="6c65f-133">Creare un'immagine dall'archiviazione BLOB</span><span class="sxs-lookup"><span data-stu-id="6c65f-133">Create an image from nlob storage</span></span>
+### <a name="create-an-image-from-nlob-storage"></a><span data-ttu-id="04d19-135">Creare un'immagine dall'archiviazione BLOB</span><span class="sxs-lookup"><span data-stu-id="04d19-135">Create an image from nlob storage</span></span>
 
 ```python
 async_create_image = compute_client.images.create_or_update(
@@ -251,7 +286,7 @@ async_create_image = compute_client.images.create_or_update(
 image = async_create_image.result()
 ```
 
-### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a><span data-ttu-id="6c65f-134">Creare uno snapshot di un disco gestito attualmente collegato a una macchina virtuale</span><span class="sxs-lookup"><span data-stu-id="6c65f-134">Create a snapshot of a Managed Disk that is currently attached to a virtual machine</span></span>
+### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a><span data-ttu-id="04d19-136">Creare uno snapshot di un disco gestito attualmente collegato a una macchina virtuale</span><span class="sxs-lookup"><span data-stu-id="04d19-136">Create a snapshot of a Managed Disk that is currently attached to a virtual machine</span></span>
 
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
